@@ -31,7 +31,7 @@ bool cIPLookup::Lookup(const AString & a_IP)
 	memset(&sa, 0, sizeof(sa));
 	if (evutil_parse_sockaddr_port(a_IP.c_str(), reinterpret_cast<sockaddr *>(&sa), &salen) != 0)
 	{
-		LOGD("Failed to parse IP address \"%s\".", a_IP.c_str());
+		LOGD("Failed to parse IP address \"%s\"." << a_IP.c_str());
 		return false;
 	}
 

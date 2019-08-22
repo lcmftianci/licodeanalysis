@@ -1,2 +1,17 @@
-﻿  Common.vcxproj -> D:\VSProject\analysislicode\\OutDir\Debug\Common.dll
-  Common.vcxproj -> D:\VSProject\analysislicode\\OutDir\Debug\Common.pdb (Full PDB)
+﻿  stdafx.cpp
+  ThreadPool.cpp
+  StringUtils.cpp
+  IsThread.cpp
+  GZipFile.cpp
+  File.cpp
+  Event.cpp
+  Errors.cpp
+  CriticalSection.cpp
+  LoggerListeners.cpp
+  Logger.cpp
+  common.cpp
+  ByteBuffer.cpp
+  正在生成代码...
+    正在创建库 D:\VSProject\licodeanalysis\\Lib\Debug\Common.lib 和对象 D:\VSProject\licodeanalysis\\Lib\Debug\Common.exp
+  Common.vcxproj -> D:\VSProject\licodeanalysis\\OutDir\Debug\Common.dll
+  Common.vcxproj -> D:\VSProject\licodeanalysis\\OutDir\Debug\Common.pdb (Full PDB)
