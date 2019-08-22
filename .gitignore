@@ -58,7 +58,7 @@ OutDir/Debug/media.pdb
 OutDir/Debug/srtp.pdb
 OutDir/Debug/zlib.pdb
 log4z/Debug/
-
+Src/Common/Debug
 OutDir/Debug/log4z.lib
 Src/Common/Debug/ByteBuffer.obj
 Src/Common/Debug/Common.log
