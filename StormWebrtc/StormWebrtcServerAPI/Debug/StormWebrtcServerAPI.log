@@ -1,0 +1,11 @@
+﻿  StormWebrtcStun.cpp
+d:\vsproject\stormwebrtc\stormwebrtcserverapi\stormwebrtcstun.cpp(252): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\string.h(344): note: 参见“strncpy”的声明
+  StormWebrtcServerImpl.cpp
+d:\vsproject\stormwebrtc\stormwebrtcserverapi\stormwebrtcserverimpl.cpp(361): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+d:\vsproject\stormwebrtc\stormwebrtcserverapi\stormwebrtcserverimpl.cpp(698): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17763.0\ucrt\string.h(137): note: 参见“strcpy”的声明
+  StormWebrtcServer.cpp
+  正在生成代码...
+  StormWebrtcServerAPI.vcxproj -> D:\VSProject\StormWebrtc\Debug\StormWebrtcServerAPI.lib

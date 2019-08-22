@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "apr", "..\..\apr\apr.dsp", "{3252AF1B-BF9D-43DD-B223-119CE7031E25}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "xml", "..\..\apr-util\xml\expat\lib\xml.dsp", "{3BF6B949-F7E5-4C22-8ACA-6F41F7F0ADCF}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "aprutil", "..\..\apr-util\aprutil.dsp", "{4DE9B888-BBFC-4D39-B68B-D7995664FF9D}"
+	ProjectSection(DevStudioProjDeps) = postProject
+		0 = apr
+		1 = xml
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log4cxx", "log4cxx.vcxproj", "{D6B9C851-F3C4-407B-A821-32DCC7FF1315}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6B9C851-F3C4-407B-A821-32DCC7FF1315}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6B9C851-F3C4-407B-A821-32DCC7FF1315}.Debug|x86.Build.0 = Debug|Win32
+		{D6B9C851-F3C4-407B-A821-32DCC7FF1315}.Release|x86.ActiveCfg = Release|Win32
+		{D6B9C851-F3C4-407B-A821-32DCC7FF1315}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

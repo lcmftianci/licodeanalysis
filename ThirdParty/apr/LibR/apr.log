@@ -1,0 +1,1 @@
+﻿D:\VSProject\analysislicode\ThirdParty\apr\apr.vcxproj(67,5): warning MSB4011: 无法再次导入“C:\Users\YWX\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.Win32.user.props”。可能已在“D:\VSProject\analysislicode\ThirdParty\apr\apr.vcxproj (57,5)”处导入过它。这很可能是生成创作错误。将忽略此后续导入。

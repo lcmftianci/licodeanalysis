@@ -1,0 +1,55 @@
+opencore-amr:
+
+32-bit:
+./configure --enable-static --disable-shared --disable-amrnb-encoder
+make
+
+64-bit:
+./configure --host=x86_64-w64-mingw32 --enable-static --disable-shared --disable-amrnb-encoder
+make
+
+----------------------------------------------
+Speex:
+
+32-bit:
+./configure --enable-sse --enable-static --disable-shared
+make
+
+64-bit:
+./configure --host=x86_64-w64-mingw32 --enable-sse --enable-static --disable-shared
+
+----------------------------------------------
+dav1d
+
+32-bit
+meson build32 --prefix .. --buildtype release --default-library static && ninja -C build32
+
+64-bit
+meson build64 --prefix .. --buildtype release --default-library static --cross-file x86_64-mingw64-cross.txt
+
+----------------------------------------------
+gnutls & deps
+
+PREFIX=/tmp/install
+
+GMP:
+32-bit
+./configure --prefix=$PREFIX --disable-shared --build=i686-w64-mingw32 --host=i686-w64-mingw32
+
+64-bit
+./configure --prefix=$PREFIX --disable-shared --build=i686-w64-mingw32 --host=x86_64-w64-mingw32
+
+
+NETTLE:
+32-bit
+./configure --prefix=$PREFIX --disable-shared --build=i686-w64-mingw32 --host=i686-w64-mingw32 --with-include-path=$PREFIX/include --with-lib-path=$PREFIX/lib
+
+64-bit
+./configure --prefix=$PREFIX --disable-shared --build=i686-w64-mingw32 --host=x86_64-w64-mingw32 --with-include-path=$PREFIX/include --with-lib-path=$PREFIX/lib
+
+GNUTLS:
+32-bit
+GMP_CFLAGS="-I$PREFIX/include" GMP_LIBS="-L$PREFIX/lib" PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig/ ./configure --prefix=$PREFIX --disable-shared --build=i686-w64-mingw32 --host=i686-w64-mingw32 --disable-cxx --with-included-libtasn1 --with-included-unistring --without-p11-kit
+
+64-bit
+GMP_CFLAGS="-I$PREFIX/include" GMP_LIBS="-L$PREFIX/lib" PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig/ ./configure --prefix=$PREFIX --disable-shared --build=i686-w64-mingw32 --host=x86_64-w64-mingw32 --disable-cxx --with-included-libtasn1 --with-included-unistring --without-p11-kit

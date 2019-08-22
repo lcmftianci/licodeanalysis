@@ -1,0 +1,3 @@
+﻿Main.obj : error LNK2019: 无法解析的外部符号 "void __cdecl StormWebrtcStaticInit(void)" (?StormWebrtcStaticInit@@YAXXZ)，该符号在函数 main 中被引用
+Main.obj : error LNK2019: 无法解析的外部符号 "void __cdecl StormWebrtcStaticCleanup(void)" (?StormWebrtcStaticCleanup@@YAXXZ)，该符号在函数 main 中被引用
+D:\VSProject\StormWebrtc\x64\Debug\StormWebrtcClientTest.exe : fatal error LNK1120: 2 个无法解析的外部命令

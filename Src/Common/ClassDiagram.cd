@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="cCriticalSection" Collapsed="true">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAwCAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAEIEAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\CriticalSection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cCSLock" Collapsed="true">
+    <Position X="25.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAAAAAAAAAEAAAAAAAAAAAAAQAAECCAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\CriticalSection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cCSUnlock" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAEEAAIAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\CriticalSection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cEvent" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQABAAAAAAAAAAAAAQAAAAAEAAAAAAKAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\Event.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cFile" Collapsed="true">
+    <Position X="22" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MCAAMQQAiACAIACQCAAABQCkBgGAAAAACAEAAAnIgAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\File.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cGZipFile" Collapsed="true">
+    <Position X="25.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAAAABIAAAAAAAAACAAAAAAAAgAAAAAAGAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\GZipFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cIsThread" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAEAAAACAAAAQIAAAAAAAAAAQAAAAAICABAAiAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\IsThread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cQueue&lt;ItemType, Funcs&gt;" Collapsed="true">
+    <Position X="22" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAACgCAAgAAgBAIAAAAAAAgBCAAAAARAAAQ=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\Queue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cTask" Collapsed="true">
+    <Position X="25.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\ThreadPool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cWorkerThread" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAIQQAAAEAAAAAAQQAAAAACAAAAAAQAgA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\ThreadPool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cThreadPool" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAiAAAAAAAAAAACCAAAAAAAEAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\ThreadPool.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cByteBufferSelfTest" Collapsed="true">
+    <Position X="22" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEAAQgAAAAA=</HashCode>
+      <FileName>ByteBuffer.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSingleThreadAccessChecker" Collapsed="true">
+    <Position X="23.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ByteBuffer.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cColouredConsoleListener" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cWindowsConsoleListener" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAACAAAAAAAAAAEAAIgAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cLinuxConsoleListener" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cAndroidConsoleListener" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cVanillaCPPConsoleListener" Collapsed="true">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cNullConsoleListener" Collapsed="true">
+    <Position X="20.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cFileListener" Collapsed="true">
+    <Position X="23.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAACAAAgAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>LoggerListeners.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackWalkerInternal" Collapsed="true">
+    <Position X="23.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAgAABIAQEAABAAABAACAAAIAIEIQBCABgKgAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cByteBuffer" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EkCMAAUEoIBHAkGkMgCCzQAYCDxABQIABAgFEEUBCIA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\ByteBuffer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cLogger" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAQAAgAAAAAAAAQAQAAAABAAAAAAAAAABAAAAIAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\Logger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StackWalker" Collapsed="true">
+    <Position X="22" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAiAAAQAAAAQABBAAAICABAIAAAIIAAQAAAAAAgAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StackWalker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="THREADNAME_INFO" Collapsed="true">
+    <Position X="20.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAACAAEAAAA=</HashCode>
+      <FileName>OSSupport\IsThread.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="cQueueFuncs&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\OSSupport\Queue.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IMAGEHLP_LINE64" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAIAIAAAAAAAAACAAAAAABAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IMAGEHLP_MODULE64" Collapsed="true">
+    <Position X="12" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAoAAAAABBCAKAAAAAAEBAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IMAGEHLP_SYMBOL64" Collapsed="true">
+    <Position X="8" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAgAAAAAAAAIQAAAAAAAACAAAAAAAAIAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_tagADDRESS64" Collapsed="true">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_KDHELP64" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQgAAAAAAEAAAAABiAAQAAAgAAgAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_tagSTACKFRAME64" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAwAQoAwAgAAAAAAAAAAAAAEAAAAAAAAAABAAAAgAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="SYM_TYPE" Collapsed="true">
+    <Position X="4" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="IMAGEHLP_LINE64" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PIMAGEHLP_LINE64" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="IMAGEHLP_MODULE64" Collapsed="true">
+    <Position X="14" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PIMAGEHLP_MODULE64" Collapsed="true">
+    <Position X="12" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="IMAGEHLP_SYMBOL64" Collapsed="true">
+    <Position X="8" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PIMAGEHLP_SYMBOL64" Collapsed="true">
+    <Position X="8" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ADDRESS_MODE" Collapsed="true">
+    <Position X="16" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ADDRESS64" Collapsed="true">
+    <Position X="4" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LPADDRESS64" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="KDHELP64" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PKDHELP64" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="STACKFRAME64" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LPSTACKFRAME64" Collapsed="true">
+    <Position X="7" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PREAD_PROCESS_MEMORY_ROUTINE64" Collapsed="true">
+    <Position X="23.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PFUNCTION_TABLE_ACCESS_ROUTINE64" Collapsed="true">
+    <Position X="20.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PGET_MODULE_BASE_ROUTINE64" Collapsed="true">
+    <Position X="22" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PTRANSLATE_ADDRESS_ROUTINE64" Collapsed="true">
+    <Position X="18.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="DWORD64" Collapsed="true">
+    <Position X="25.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StackWalker.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PDWORD64" Collapsed="true">
+    <Position X="18.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StackWalker.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SIZE_T" Collapsed="true">
+    <Position X="20.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StackWalker.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="PSIZE_T" Collapsed="true">
+    <Position X="25.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StackWalker.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="AString" Collapsed="true">
+    <Position X="18.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StringUtils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="AStringVector" Collapsed="true">
+    <Position X="23.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StringUtils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="AStringList" Collapsed="true">
+    <Position X="20.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StringUtils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="AStringMap" Collapsed="true">
+    <Position X="22" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\VSProject\licode-windows\Include\StringUtils.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_enum_0075_1" Collapsed="true">
+    <Position X="4" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEACAAAAAAAAAAAAEAQgAAACAABAAQAAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="__unnamed_enum_0075_2" Collapsed="true">
+    <Position X="16" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAACEQAAAAAAAAAA=</HashCode>
+      <FileName>StackWalker.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

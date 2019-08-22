@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VosVideo.Common\VosVideo.Common.vcxproj">
+      <Project>{4a3e4d39-cefe-43ad-82d1-cc49f3f55b00}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VosVideo.Communication\VosVideo.Communication.vcxproj">
+      <Project>{cb254df4-87c7-49b1-8d6d-a35a74ab6706}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VosVideo.Data\VosVideo.Data.vcxproj">
+      <Project>{6f129e1b-51ba-4372-8d91-1d123cb18b15}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VosVideo.WebRtc\VosVideo.WebRtc.vcxproj">
+      <Project>{9e392771-bdb7-4244-b83b-b0e9654a0930}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{56E341D6-68A9-4298-AE0A-C315F4B0EFAD}</ProjectGuid>
+    <RootNamespace>VosVideoWebRtcTest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;..\..\;$(THIRDPARTY_ROOT)\gtest\include;$(THIRDPARTY_ROOT)\casablanca\SDK\include;$(THIRDPARTY_ROOT)\boost;$(THIRDPARTY_ROOT)\poco\Foundation\include;$(THIRDPARTY_ROOT)\libjingle\src;$(THIRDPARTY_ROOT)\libjingle\src\third_party;$(THIRDPARTY_ROOT)\libjingle\src\chromium\src\third_party\jsoncpp\source\include;$(THIRDPARTY_ROOT)\libjingle\src\webrtc;$(THIRDPARTY_ROOT)\libjingle\src\webrtc\modules\video_capture\include;$(THIRDPARTY_ROOT)\libjingle\src\webrtc\system_wrappers\interface;$(THIRDPARTY_ROOT)\libjingle\src\third_party\jsoncpp\source\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WEBRTC_WIN;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;JSONCPP_RELATIVE_PATH;WIN32;_VARIADIC_MAX=10;_DEBUG;_CONSOLE;WEBRTC_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(THIRDPARTY_ROOT)\gtest\lib\Debug;$(THIRDPARTY_ROOT)\casablanca\SDK\lib\Debug;$(THIRDPARTY_ROOT)\boost\stage\lib;$(THIRDPARTY_ROOT)\libjingle\lib\Debug;$(THIRDPARTY_ROOT)\poco\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtestd.lib;dbghelp.lib;cpprest140d_2_8.lib;crypt32.lib;secur32.lib;dmoguids.lib;wmcodecdspuuid.lib;ws2_32.lib;Mf.lib;Mfplat.lib;Mfuuid.lib;msdmo.lib;msimg32.lib;Winmm.lib;ana_config_proto.lib;ana_debug_dump_proto.lib;audio.lib;audioproc_debug_proto.lib;audioproc_protobuf_utils.lib;audioproc_unittest_proto.lib;audio_coder.lib;audio_coding.lib;audio_conference_mixer.lib;audio_decoder_g722.lib;audio_device.lib;audio_encoder_g722.lib;audio_format_conversion.lib;audio_frame_manipulator.lib;audio_frame_operations.lib;audio_level.lib;audio_mixer_impl.lib;audio_network_adaptor.lib;audio_processing.lib;audio_processing_sse2.lib;bitrate_controller.lib;boringssl.lib;boringssl_asm.lib;builtin_audio_decoder_factory.lib;builtin_audio_decoder_factory_internal.lib;builtin_audio_encoder_factory.lib;builtin_audio_encoder_factory_internal.lib;bwe_simulator_lib.lib;call.lib;chart_proto.lib;cng.lib;command_line_parser.lib;common_audio.lib;common_audio_sse2.lib;common_video.lib;congestion_controller.lib;desktop_capture.lib;desktop_capture_differ_sse2.lib;dl.lib;event_log_visualizer_utils.lib;ffmpeg_internal.lib;ffmpeg_yasm.lib;field_trial_default.lib;file_player.lib;file_recorder.lib;frame_editing_lib.lib;g711.lib;g722.lib;gtest.lib;ilbc.lib;isac.lib;isac_c.lib;isac_common.lib;isac_fix.lib;legacy_encoded_audio_frame.lib;lib.lib;libjingle_peerconnection_api.lib;libjpeg.lib;libsrtp.lib;libstunprober.lib;libvpx.lib;libvpx_yasm.lib;libyuv_internal.lib;media_file.lib;metrics_default.lib;neteq.lib;neteq_unittest_proto.lib;network_tester.lib;network_tester_config_proto.lib;network_tester_packet_proto.lib;openh264_common_yasm.lib;openh264_encoder_yasm.lib;openh264_processing_yasm.lib;opus.lib;ortc.lib;pacing.lib;pcm16b.lib;peerconnection.lib;primitives.lib;protobuf_full.lib;protobuf_lite.lib;protoc_lib.lib;red.lib;reference_less_video_analysis_lib.lib;remote_bitrate_estimator.lib;rent_a_codec.lib;rtc_audio_video.lib;rtc_base.lib;rtc_base_approved.lib;rtc_data.lib;rtc_event_log_impl.lib;rtc_event_log_parser.lib;rtc_event_log_proto.lib;rtc_event_log_source.lib;rtc_numerics.lib;rtc_p2p.lib;rtc_pc_base.lib;rtc_stats.lib;rtc_task_queue.lib;rtp_rtcp.lib;sequenced_task_checker.lib;simd.lib;simd_asm.lib;system_wrappers.lib;usrsctp.lib;utility.lib;video.lib;video_capture.lib;video_capture_internal_impl.lib;video_capture_module.lib;video_coding.lib;video_coding_utility.lib;video_processing.lib;video_processing_sse2.lib;video_quality_analysis.lib;voice_engine.lib;weak_ptr.lib;webrtc.lib;webrtc_common.lib;webrtc_h264.lib;webrtc_i420.lib;webrtc_opus.lib;webrtc_vp8.lib;webrtc_vp9.lib;winsdk_samples.lib;yasm_utils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\;..\..\;$(THIRDPARTY_ROOT)\gtest\include;$(THIRDPARTY_ROOT)\casablanca\SDK\include;$(THIRDPARTY_ROOT)\boost;$(THIRDPARTY_ROOT)\poco\Foundation\include;$(THIRDPARTY_ROOT)\libjingle\src;$(THIRDPARTY_ROOT)\libjingle\src\third_party;$(THIRDPARTY_ROOT)\libjingle\src\chromium\src\third_party\jsoncpp\source\include;$(THIRDPARTY_ROOT)\libjingle\src\webrtc;$(THIRDPARTY_ROOT)\libjingle\src\webrtc\modules\video_capture\include;$(THIRDPARTY_ROOT)\libjingle\src\webrtc\system_wrappers\interface;$(THIRDPARTY_ROOT)\libjingle\src\third_party\jsoncpp\source\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WEBRTC_WIN;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;JSONCPP_RELATIVE_PATH;WIN32;_VARIADIC_MAX=10;NDEBUG;_CONSOLE;WEBRTC_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(THIRDPARTY_ROOT)\gtest\lib\Release;$(THIRDPARTY_ROOT)\casablanca\SDK\lib\Release;$(THIRDPARTY_ROOT)\boost\stage\lib;$(THIRDPARTY_ROOT)\libjingle\lib\Release;$(THIRDPARTY_ROOT)\poco\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtest.lib;dbghelp.lib;cpprest140_2_8.lib;crypt32.lib;secur32.lib;dmoguids.lib;wmcodecdspuuid.lib;ws2_32.lib;Mf.lib;Mfplat.lib;Mfuuid.lib;msdmo.lib;msimg32.lib;Winmm.lib;ana_config_proto.lib;ana_debug_dump_proto.lib;audio.lib;audioproc_debug_proto.lib;audioproc_protobuf_utils.lib;audioproc_unittest_proto.lib;audio_coder.lib;audio_coding.lib;audio_conference_mixer.lib;audio_decoder_g722.lib;audio_device.lib;audio_encoder_g722.lib;audio_format_conversion.lib;audio_frame_manipulator.lib;audio_frame_operations.lib;audio_level.lib;audio_mixer_impl.lib;audio_network_adaptor.lib;audio_processing.lib;audio_processing_sse2.lib;bitrate_controller.lib;boringssl.lib;boringssl_asm.lib;builtin_audio_decoder_factory.lib;builtin_audio_decoder_factory_internal.lib;builtin_audio_encoder_factory.lib;builtin_audio_encoder_factory_internal.lib;bwe_simulator_lib.lib;call.lib;chart_proto.lib;cng.lib;command_line_parser.lib;common_audio.lib;common_audio_sse2.lib;common_video.lib;congestion_controller.lib;desktop_capture.lib;desktop_capture_differ_sse2.lib;dl.lib;event_log_visualizer_utils.lib;ffmpeg_internal.lib;ffmpeg_yasm.lib;field_trial_default.lib;file_player.lib;file_recorder.lib;frame_editing_lib.lib;g711.lib;g722.lib;ilbc.lib;isac.lib;isac_c.lib;isac_common.lib;isac_fix.lib;legacy_encoded_audio_frame.lib;lib.lib;libjingle_peerconnection_api.lib;libjpeg.lib;libsrtp.lib;libstunprober.lib;libvpx.lib;libvpx_yasm.lib;libyuv_internal.lib;media_file.lib;metrics_default.lib;neteq.lib;neteq_unittest_proto.lib;network_tester.lib;network_tester_config_proto.lib;network_tester_packet_proto.lib;openh264_common_yasm.lib;openh264_encoder_yasm.lib;openh264_processing_yasm.lib;opus.lib;ortc.lib;pacing.lib;pcm16b.lib;peerconnection.lib;primitives.lib;protobuf_full.lib;protobuf_lite.lib;protoc_lib.lib;red.lib;reference_less_video_analysis_lib.lib;remote_bitrate_estimator.lib;rent_a_codec.lib;rtc_audio_video.lib;rtc_base.lib;rtc_base_approved.lib;rtc_data.lib;rtc_event_log_impl.lib;rtc_event_log_parser.lib;rtc_event_log_proto.lib;rtc_event_log_source.lib;rtc_numerics.lib;rtc_p2p.lib;rtc_pc_base.lib;rtc_stats.lib;rtc_task_queue.lib;rtp_rtcp.lib;sequenced_task_checker.lib;simd.lib;simd_asm.lib;system_wrappers.lib;usrsctp.lib;utility.lib;video.lib;video_capture.lib;video_capture_internal_impl.lib;video_capture_module.lib;video_coding.lib;video_coding_utility.lib;video_processing.lib;video_processing_sse2.lib;video_quality_analysis.lib;voice_engine.lib;weak_ptr.lib;webrtc.lib;webrtc_common.lib;webrtc_h264.lib;webrtc_i420.lib;webrtc_opus.lib;webrtc_vp8.lib;webrtc_vp9.lib;winsdk_samples.lib;yasm_utils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

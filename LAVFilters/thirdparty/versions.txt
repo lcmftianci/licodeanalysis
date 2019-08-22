@@ -1,0 +1,5 @@
+DAV1D 0.4.0-12-gdff0a08
+
+GMP 6.1.2
+NETTLE 3.4.1
+GNUTLS 3.6.6

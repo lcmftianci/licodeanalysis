@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="erizo::SrtpChannel" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAQRgEAAAAgAAAEGAABAAAAAACACACAAAoAQA=</HashCode>
+      <FileName>SrtpChannel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::Resender" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAIAAQAACAAAAEIAAAAAEASAJAQACAEAAAAAAAAI=</HashCode>
+      <FileName>DtlsTransport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::DtlsTransport" Collapsed="true">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABBhEEACAIAIABAgggABkSQDBEABAgACAagAIAGQghA=</HashCode>
+      <FileName>DtlsTransport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::NiceConnection" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAgCAkABACAUAjEgRJATEAIMBEIBAGAIIAwogCBEg=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::Monitor" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::FeedbackSink" Collapsed="true">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAARAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::FeedbackSource" Collapsed="true">
+    <Position X="17" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::MediaSink" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAACAAQAAiAEAAAIBACAgAAAAAAAAAAAAIAASAAgA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::MediaSource" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgIAAAAAEAAAAADAFAAIACAAAECAAAAAACCAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::NiceReceiver" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::CandidateInfo" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACABAAQAAAACAABICAEAAAAAAAAAAIAhBgAAQAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::WebRtcConnection" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEIWAEApARxQAABslJBGkTMAAASfYTKMgABAREKgA=</HashCode>
+      <FileName>WebRtcConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::IceConfig" Collapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAoAoABAAAAAAAAAAAAgAAAAAAAABgICAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::NiceConnectionListener" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::OneToManyProcessor" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Typedef Name="erizo::OneToManyProcessor::sink_ptr" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OneToManyProcessor.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAAACIAAAAAAAAAAAAAAAgQIAGAAAADAgAAAgQAAAA=</HashCode>
+      <FileName>OneToManyProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::CryptoInfo" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAIBAAAAAAAAAAAAIAACAAAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::BundleTag" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::ExtMap" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAIAAAAAAIAAAAAAAIACAAAAAAAACAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::SdpInfo" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BERAOUEIAAwUKAIIABAIlAAACAAQEIQjChSoBkAAAWg=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::WebRtcConnectionStatsListener" Collapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>WebRtcConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::Stats" Collapsed="true">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBGCQYCAIEIAAAAAQEREjAAKCARAIARCAgACAjQAKBA=</HashCode>
+      <FileName>Stats.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::Transport" Collapsed="true">
+    <Position X="6" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAFCAACAAQwAAAIgAcAIEBAARQEAaAAAAAgABA=</HashCode>
+      <FileName>Transport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::TransportListener" Collapsed="true">
+    <Position X="14.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAACAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::WebRtcConnectionEventListener" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebRtcConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtcpAggregator" Collapsed="true">
+    <Position X="1.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIgiAEBAJYABAAAEBAAAAAQAACACAAAAggAgAAA=</HashCode>
+      <FileName>rtp\RtcpAggregator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtcpForwarder" Collapsed="true">
+    <Position X="3.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAiAEBABYABAAAEBAAAAAQAACASAAIAggAgAAA=</HashCode>
+      <FileName>rtp\RtcpForwarder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::SrData" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>rtp\RtcpProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtcpData" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgRAAQAkkAEAAAEQmAGMQEACQGAAAAAKEAAAABAARAM=</HashCode>
+      <FileName>rtp\RtcpProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtcpProcessor" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAEBEAAABAAAMIAAAAAQAACAAAABAAAAAAAA=</HashCode>
+      <FileName>rtp\RtcpProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpExtensionProcessor" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAABAAAAAAAAABAABQAACDAAAAAAAIEA=</HashCode>
+      <FileName>rtp\RtpExtensionProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpHeader" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAECAAAAKwgAEJAgABAEBAAiQAASAMYMAAGwCKAAU=</HashCode>
+      <FileName>rtp\RtpHeaders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::AbsSendTimeExtension" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAAAEAAAAAAAAAiAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>rtp\RtpHeaders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpRtxHeader" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAEAAAAQAAA=</HashCode>
+      <FileName>rtp\RtpHeaders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtcpHeader" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ESAFgSBAIAAVEBAEAmQAhAZAACyAAAxAgMABCABzmAE=</HashCode>
+      <FileName>rtp\RtpHeaders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::FirHeader" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAEACAAAEAAAAAAACCAAAAAAAAAIAACAAA=</HashCode>
+      <FileName>rtp\RtpHeaders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RedHeader" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAABAQCAAAA=</HashCode>
+      <FileName>rtp\RtpHeaders.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpPacketQueue" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAIAAABKAQABAgAIAAAQEAAACBgAAAAAAAAE=</HashCode>
+      <FileName>rtp\rtppacketqueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpSink" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgCCAAAAwAAQAgAABAAggIAAEAIADBAAIAgQAAAA=</HashCode>
+      <FileName>rtp\RtpSink.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpSource" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAAAAkAAQAgACAEIAwgAAAAAACAAAIAgAAAAA=</HashCode>
+      <FileName>rtp\RtpSource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpVP8Fragmenter" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCABAAAAAAAAAAAAAACCAAAAEIQACAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\RtpVP8Fragmenter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::RtpVP8Parser" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAgAAAAAIAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\RtpVP8Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::ProtectedPacket" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction.cc</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::FecPacket" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction.cc</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::RtpData" Collapsed="true">
+    <Position X="19.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAgAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\fec_receiver_impl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::FecReceiverImpl" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAACEkAAAEgAAIQAAAAA=</HashCode>
+      <FileName>rtp\webrtc\fec_receiver_impl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::ForwardErrorCorrection" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAEAIBAQAAIEBBABEAAAEAggACgoIEAAEBcAARCEAA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::scoped_refptr&lt;T&gt;" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAIABEAAAAAAAgAAQgAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\scoped_refptr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="webrtc::internal::PacketMaskTable" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAgAAAEAAQgAAAAAAgAAAAAAAAABAAAAAAAAAQ=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction_internal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dtls::DtlsSocketContext" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAEAAAwAAIkYCAGAgAAEgAwAAUCBQACAEAAAAA=</HashCode>
+      <FileName>dtls\DtlsSocket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dtls::SrtpSessionKeys" Collapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAAAAEAAAAgAAAAAAAACAAAAAAAAAABIKAAAA=</HashCode>
+      <FileName>dtls\DtlsSocket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dtls::DtlsSocket" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAADAAAgAAAQKQEAgAAgAAAAAAGUGAAoAAAIAAEA=</HashCode>
+      <FileName>dtls\DtlsSocket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dtls::DtlsReceiver" Collapsed="true">
+    <Position X="9" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dtls\DtlsSocket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="erizo::dataPacket" Collapsed="true">
+    <Position X="23.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAABAQAAAAAQAAAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="erizo::CandidatePair" Collapsed="true">
+    <Position X="21.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAIAACQAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="erizo::RtpMap" Collapsed="true">
+    <Position X="30.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAIEAAQAAAAAAKAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="erizo::__unnamed_struct_017b_1" Collapsed="true">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIBAAAAAAAAAAGACAAkCAAEgAASAAhAgAQgAAAAAA=</HashCode>
+      <FileName>rtp\RtpVP8Parser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="BIO_F_DWRAP_CTX_" Collapsed="true">
+    <Position X="1.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>dtls\bf_dwrap.c</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::RTPHeaderExtension" Collapsed="true">
+    <Position X="28.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAgAAAAAEBAAgAAAAAAAAEAAAAAAAQAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::RTPHeader" Collapsed="true">
+    <Position X="27" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAEAQAACBAAAAiAAAAgAAAEEAAAAgAg=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::RTPAudioHeader" Collapsed="true">
+    <Position X="25.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAAAAACAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::RTPVideoHeaderVP8" Collapsed="true">
+    <Position X="25.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAACAAECAAEAAACAAAAAEAgAAAAAE=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::RTPVideoHeaderH264" Collapsed="true">
+    <Position X="23.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::RTPVideoHeader" Collapsed="true">
+    <Position X="21.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAUAQAAAgAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="webrtc::WebRtcRTPHeader" Collapsed="true">
+    <Position X="27" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="NiceAgent" Collapsed="true">
+    <Position X="25.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="GMainContext" Collapsed="true">
+    <Position X="21.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="GMainLoop" Collapsed="true">
+    <Position X="23.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint" Collapsed="true">
+    <Position X="30.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="erizo::packetPtr" Collapsed="true">
+    <Position X="27" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="erizo::RTPPayloadVP8" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\RtpVP8Parser.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="webrtc::ProtectedPacketList" Collapsed="true">
+    <Position X="28.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction.cc</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="BIO_F_DWRAP_CTX" Collapsed="true">
+    <Position X="1.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dtls\bf_dwrap.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="erizo::packetType" Collapsed="true">
+    <Position X="27" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>MediaDefinitions.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::IceState" Collapsed="true">
+    <Position X="23.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAABAAAAAAAQAAAAAAAAAAEAAAAAAAAAAEA=</HashCode>
+      <FileName>NiceConnection.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::HostType" Collapsed="true">
+    <Position X="21.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAACAgAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::MediaType" Collapsed="true">
+    <Position X="25.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQEAAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::StreamDirection" Collapsed="true">
+    <Position X="25.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQACAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::Profile" Collapsed="true">
+    <Position X="28.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SdpInfo.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::WebRTCEvent" Collapsed="true">
+    <Position X="28.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAEAAAAAAAAgABAAQCIAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>WebRtcConnection.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::RTPExtensions" Collapsed="true">
+    <Position X="21.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEEAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>rtp\RtpExtensionProcessor.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="erizo::FrameTypes" Collapsed="true">
+    <Position X="30.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\RtpVP8Parser.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TransportState" Collapsed="true">
+    <Position X="27" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAAABAAAQAAAAABAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FecMaskType" Collapsed="true">
+    <Position X="27" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="webrtc::__unnamed_enum_0180_1" Collapsed="true">
+    <Position X="21.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction.cc</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="webrtc::__unnamed_enum_0185_1" Collapsed="true">
+    <Position X="25.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="webrtc::FrameType" Collapsed="true">
+    <Position X="28.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAEAAABAAAAIAAAAAAAAAgA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="webrtc::RtpVideoCodecTypes" Collapsed="true">
+    <Position X="23.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAAAAAAAAAAAAAAQAAAAAAAEAAAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="`anonymous-namespace'::ProtectionMode" Collapsed="true">
+    <Position X="30.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>rtp\webrtc\forward_error_correction_internal.cc</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="webrtc::RtpUtility::__unnamed_enum_0184_1" Collapsed="true">
+    <Position X="23.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAACAAIAAAAABAAAAACAAAAAAAA=</HashCode>
+      <FileName>rtp\webrtc\rtp_utility.cc</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

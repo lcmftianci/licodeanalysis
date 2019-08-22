@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Json::Value" Collapsed="true">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAoGAgSASBEiCgqAIQoTQlaAQeBG3BACQWgDAAqQhA=</HashCode>
+      <FileName>d:\VSProject\licode-windows\ThirdParty\jsoncpp-1.6.5\include\json\value.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cAuthenticator" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACBAIAQAEAAADQIAgAQAAAEAKAAAAAAAAAI=</HashCode>
+      <FileName>Protocol\Authenticator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cProtocol_impl" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQYAAAAAIABAAAAAIDFAFAAgAEoAACgBEJIAAEEDCE=</HashCode>
+      <FileName>Protocol\cProtocol_impl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cPacketizer" Collapsed="true">
+    <Position X="23.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAoARAAgCAAgCAhYgwgAAAAIAAEAAIAEQBAAA=</HashCode>
+      <FileName>Protocol\Packetizer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cBlockingSslClientSocketConnectCallbacks" Collapsed="true">
+    <Position X="22" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAACAAAAAAAAAAAAAAAAAAAIAAAAAIAAAAAA=</HashCode>
+      <FileName>PolarSSL++\BlockingSslClientSocket.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cBlockingSslClientSocketLinkCallbacks" Collapsed="true">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAAAAAAASAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\BlockingSslClientSocket.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cAesCfb128Decryptor" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEABAAAAAAAAAAAAAAhAAEAAAAAAAACAAQACAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\AesCfb128Decryptor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cAesCfb128Encryptor" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAAAAhAAUAAAAAAAgAAAQACAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\AesCfb128Encryptor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cBlockingSslClientSocket" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAQEAAIQBAAACABQAEAACIAgAIgSAgIRAAAAAQAAAEA=</HashCode>
+      <FileName>PolarSSL++\BlockingSslClientSocket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cBufferedSslContext" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQBAAAAAAAQAAgAAAgEIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\BufferedSslContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cCallbackSslContext" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAQBAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\CallbackSslContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cCryptoKey" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAAAAAAACAAAQAAgAAAIAAAAAAAAMAAAACAEAAAA=</HashCode>
+      <FileName>PolarSSL++\CryptoKey.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cCtrDrbgContext" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAiAQAAAAgAAAAAAAAAAAAAAEAAAAEAAAA=</HashCode>
+      <FileName>PolarSSL++\CtrDrbgContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cEntropyContext" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAACAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\EntropyContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cRsaPrivateKey" Collapsed="true">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAACAAAQAAAAAEEAAAAEAAAAAAAAAEEAIAA=</HashCode>
+      <FileName>PolarSSL++\RsaPrivateKey.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSha1Checksum" Collapsed="true">
+    <Position X="15" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAACAAAAAAAAAAAAAAIAAAAAEgAgAAAACAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\Sha1Checksum.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSslContext" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAhQBAAIARAQAAkgAABBAIAAggBBRAAAACEAAAA=</HashCode>
+      <FileName>PolarSSL++\SslContext.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cX509Cert" Collapsed="true">
+    <Position X="20.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>PolarSSL++\X509Cert.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cEnumIPAddressTest" Collapsed="true">
+    <Position X="22" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>OSSupport\NetworkInterfaceEnum.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cUDPSendAfterLookup" Collapsed="true">
+    <Position X="18.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIIAAAAAAFCAAAAAAIAAQAgAAAAACAAAAAAQAAAQwAA=</HashCode>
+      <FileName>OSSupport\UDPEndpointImpl.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cHostnameLookup" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAEACAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>OSSupport\HostnameLookup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cIPLookup" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAQAAAAAAAQgA=</HashCode>
+      <FileName>OSSupport\IPLookup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cTCPLink" Collapsed="true">
+    <Position X="6.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECACAAAAAAAAAAAAEgAAQCAEAAAAAAAAAAABACAQAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cServerHandle" Collapsed="true">
+    <Position X="9.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cUDPEndpoint" Collapsed="true">
+    <Position X="3.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAACEACAAAAEAAAAAAAAAAGAACAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cNetwork" Collapsed="true">
+    <Position X="20.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAgAEAAAAAAAIAAACAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cNetworkSingleton" Collapsed="true">
+    <Position X="22" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgIQAAAAAAAArEAAACIAgAAhAQEAEACAIkAAAIQIA=</HashCode>
+      <FileName>OSSupport\NetworkSingleton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cServerHandleImpl" Collapsed="true">
+    <Position X="9.5" Y="10.75" Width="1.5" />
+    <NestedTypes>
+      <Typedef Name="cServerHandleImpl::super" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>OSSupport\ServerHandleImpl.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAYAAgAAAAAAAFAFAAAEAAAQAAAAAAEAiAQAAACBQAA=</HashCode>
+      <FileName>OSSupport\ServerHandleImpl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSocket" Collapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAgQRAlAABEFApAFiAAcAAAAAgIAIQEARCAFAAAEA=</HashCode>
+      <FileName>OSSupport\Socket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cTCPLinkImpl" Collapsed="true">
+    <Position X="6.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACACAgAAAAAAIAEwACYCACCgAAEAAAICALACBwIQ=</HashCode>
+      <FileName>OSSupport\TCPLinkImpl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cUDPEndpointImpl" Collapsed="true">
+    <Position X="3.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IICAAAAAAQAAIAAACEAAAAgAABAAAAAAAAMCAAKQQAA=</HashCode>
+      <FileName>OSSupport\UDPEndpointImpl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cRoom" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="cRoom::Listener" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Channel\Room.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACIACKAgAAAAAAAAAAAAAAAAKAQAEAAAAACA=</HashCode>
+      <FileName>Channel\Room.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cChannelObserver" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Channel\Manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cManager" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAgMAQAAQIAQFAAAEQAAAAAKACAAhAAECA=</HashCode>
+      <FileName>Channel\Manager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cPeer" Collapsed="true">
+    <Position X="15" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="cPeer::cListener" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Channel\Peer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="cPeer::WebRtcEventListener" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Channel\Peer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Typedef Name="cPeer::WebRtcEventListeners" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Channel\Peer.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgAEAAAAAwAAEAAACAMAAAgAAIAICAAjAAAAIAAgAyQ=</HashCode>
+      <FileName>Channel\Peer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cFastRandomTest" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>FastRandom.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ContextHashtableBase&lt;HASHTABLE_KEY&gt;" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="ContextHashtableBase&lt;HASHTABLE_KEY&gt;::AllocHashEntryType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>LeakFinder.cpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAAAUAAABAACAAIEgAADAAAIQAKAAAhYAAgAABAAAI=</HashCode>
+      <FileName>LeakFinder.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRTTable" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAIAAAgAgAACAAAAAAAABAhAAAgYAAAAAA=</HashCode>
+      <FileName>LeakFinder.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cServerListenCallbacks" Collapsed="true">
+    <Position X="23.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAAAAAACAAAAAAAAAAEAAAAAAAAAAAAAAAAAAwAA=</HashCode>
+      <FileName>Server.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cClientHandle" Collapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GRCAABAAAKzDCgAaBBBkTYIgAIBQIRCgAEBKKJAAADI=</HashCode>
+      <FileName>ClientHandle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cCommandOutputCallback" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAgAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandOutput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cNullCommandOutputCallback" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandOutput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cStringAccumCommandOutputCallback" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <NestedTypes>
+      <Typedef Name="cStringAccumCommandOutputCallback::super" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CommandOutput.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>CommandOutput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cLogCommandOutputCallback" Collapsed="true">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandOutput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cLogCommandDeleteSelfOutputCallback" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <NestedTypes>
+      <Typedef Name="cLogCommandDeleteSelfOutputCallback::super" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CommandOutput.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CommandOutput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cFastRandom" Collapsed="true">
+    <Position X="23.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAQAACAAAAAAAAAAIAAACAAA=</HashCode>
+      <FileName>FastRandom.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MTRand" Collapsed="true">
+    <Position X="23.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FastRandom.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cIniFile" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgYAgFIAAqUogYASAAAABgBEBAEIAACACAKBBIQJA=</HashCode>
+      <FileName>IniFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeakFinderOutput" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgAAIAAAAAQAABAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>LeakFinder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LeakFinderXmlOutput" Collapsed="true">
+    <Position X="8.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAgAAIAAAAASAABAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>LeakFinder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZZZ_LeakFinder" Collapsed="true">
+    <Position X="20.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>LeakFinder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MD5" Collapsed="true">
+    <Position X="22" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACQEAkAAAAIAgAAACADAAAACAGAABAAACgAAAEAAA=</HashCode>
+      <FileName>md5.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cOverridesSettingsRepository" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAQAgAIEAAEoAIAQEAAAAABAAAEAAAACAAAAAIAAA=</HashCode>
+      <FileName>OverridesSettingsRepository.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cProtocol" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAACIgAAAAAAAAEEAAAAAEIBACgAABJAAAABCA=</HashCode>
+      <FileName>Protocol\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cServer" Collapsed="true">
+    <Position X="22" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAADJEACSQEYAAAAIIMEQEAQAAMAAAUQCAIABZARDA=</HashCode>
+      <FileName>Server.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cRoot" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAOAQAgCECAAhAAQIAQIGBAgAKAjAAA1ABAAABQAA=</HashCode>
+      <FileName>Root.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cMemorySettingsRepository" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQCgAIAAAEoAIAQAgAAAABAAAEAAAAAAAAAAoAAA=</HashCode>
+      <FileName>MemorySettingsRepository.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cSettingsRepositoryInterface" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAgCIAAAEoAIAQAAAAAABAAAEAAAAAAAAAAIAAA=</HashCode>
+      <FileName>SettingsRepositoryInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::WebRtcConnection" Collapsed="true">
+    <Position X="18.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEIWAEApARxQAABslJBGkTMAAASfYTKMgABAREKgA=</HashCode>
+      <FileName>d:\VSProject\licode-windows\Src\media\WebRtcConnection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="erizo::OneToManyProcessor" Collapsed="true">
+    <Position X="15" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACIAAAAAAAAAAAAAAAgQIAGAAAADAgAAAgQAAAA=</HashCode>
+      <FileName>d:\VSProject\licode-windows\Src\media\OneToManyProcessor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_GUID" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAACAQAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>func.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_CrtMemBlockHeader" Collapsed="true">
+    <Position X="15" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAwAAAAAAAAAAAAAAAAAAAAgEAAAAAAAAEAJAAAAA=</HashCode>
+      <FileName>LeakFinder.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="cCryptoKeyPtr" Collapsed="true">
+    <Position X="22" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\CryptoKey.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cRsaPrivateKeyPtr" Collapsed="true">
+    <Position X="18.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\RsaPrivateKey.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cX509CertPtr" Collapsed="true">
+    <Position X="16.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PolarSSL++\X509Cert.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cHostnameLookupPtr" Collapsed="true">
+    <Position X="23.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\HostnameLookup.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cHostnameLookupPtrs" Collapsed="true">
+    <Position X="15" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\HostnameLookup.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cIPLookupPtr" Collapsed="true">
+    <Position X="16.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\IPLookup.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cIPLookupPtrs" Collapsed="true">
+    <Position X="18.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\IPLookup.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cTCPLinkPtr" Collapsed="true">
+    <Position X="20.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cTCPLinkPtrs" Collapsed="true">
+    <Position X="22" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cServerHandlePtr" Collapsed="true">
+    <Position X="23.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cServerHandlePtrs" Collapsed="true">
+    <Position X="15" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cUDPEndpointPtr" Collapsed="true">
+    <Position X="15" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\Network.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cTCPLinkImplPtr" Collapsed="true">
+    <Position X="16.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\NetworkSingleton.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cTCPLinkImplPtrs" Collapsed="true">
+    <Position X="18.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\NetworkSingleton.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cServerHandleImplPtr" Collapsed="true">
+    <Position X="20.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\NetworkSingleton.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cServerHandleImplPtrs" Collapsed="true">
+    <Position X="22" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\NetworkSingleton.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cUDPEndpointImplPtr" Collapsed="true">
+    <Position X="23.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OSSupport\UDPEndpointImpl.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cParticipantPtr" Collapsed="true">
+    <Position X="22" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Channel\Room.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cParticipantPtrs" Collapsed="true">
+    <Position X="23.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Channel\Room.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cParticipants" Collapsed="true">
+    <Position X="15" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Channel\Room.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cRooms" Collapsed="true">
+    <Position X="16.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Channel\Manager.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="erizo::WebRtcConnections" Collapsed="true">
+    <Position X="23.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Channel\Peer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="GUID" Collapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>func.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="UUID" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>func.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pMiniDumpWriteDump" Collapsed="true">
+    <Position X="20.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>main.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ClientList" Collapsed="true">
+    <Position X="20.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Server.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint64" Collapsed="true">
+    <Position X="22" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stdafx.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int64" Collapsed="true">
+    <Position X="18.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stdafx.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cClientHandlePtr" Collapsed="true">
+    <Position X="16.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClientHandle.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Byte" Collapsed="true">
+    <Position X="15" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d:\VSProject\licode-windows\ThirdParty\zlib\zconf.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cClientHandlePtrs" Collapsed="true">
+    <Position X="18.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Server.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="cClientHandles" Collapsed="true">
+    <Position X="20.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Server.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

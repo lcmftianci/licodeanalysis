@@ -1,0 +1,102 @@
+﻿  user_socket.c
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(715): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(780): warning C4267: “=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(787): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(904): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(939): warning C4267: “=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(992): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(1031): warning C4267: “=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(1126): warning C4267: “=”: 从“size_t”转换到“unsigned long”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(3362): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(3365): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_socket.c(3376): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+  user_recv_thread.c
+d:\vsproject\stormwebrtc\external\usrsctplib\user_recv_thread.c(1154): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_recv_thread.c(1205): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_recv_thread.c(1269): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\user_recv_thread.c(1342): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+  user_mbuf.c
+d:\vsproject\stormwebrtc\external\usrsctplib\user_mbuf.c(735): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+  user_environment.c
+  sctp_usrreq.c
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_usrreq.c(281): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_usrreq.c(2017): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_usrreq.c(2478): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  sctp_userspace.c
+  sctp_timer.c
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_timer.c(663): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_timer.c(791): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+  sctp_sysctl.c
+  sctp_ss_functions.c
+  sctp_sha1.c
+  sctp_peeloff.c
+  sctp_pcb.c
+  sctp_output.c
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(3603): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(4341): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(4627): warning C4267: “=”: 从“size_t”转换到“unsigned short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(4796): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(6865): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(6868): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(7023): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(7189): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(7210): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(7408): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(7898): warning C4267: “=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(7937): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(10240): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(10723): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(10981): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(11195): warning C4267: “=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(11207): warning C4267: “=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(11575): warning C4244: “函数”: 从“unsigned __int64”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(11598): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(11692): warning C4267: “=”: 从“size_t”转换到“unsigned short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(12097): warning C4267: “=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(12232): warning C4267: “=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(12288): warning C4267: “=”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(12893): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(12916): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(12981): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(13005): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_output.c(13777): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+  sctp_input.c
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_input.c(3491): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_input.c(5757): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_input.c(5878): warning C4267: “函数”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_input.c(5911): warning C4267: “函数”: 从“size_t”转换到“uint16_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_input.c(6035): warning C4267: “函数”: 从“size_t”转换到“uint16_t”，可能丢失数据
+  sctp_indata.c
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(2512): warning C4267: “函数”: 从“size_t”转换到“u_short”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(2705): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(2906): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(3217): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(3519): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(3538): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(3658): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(4311): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctp_indata.c(4604): warning C4244: “函数”: 从“uintptr_t”转换到“uint32_t”，可能丢失数据
+  sctp_crc32.c
+  sctp_cc_functions.c
+  sctp_callout.c
+  sctp_bsd_addr.c
+  sctp_auth.c
+  正在生成代码...
+  正在编译...
+  sctp_asconf.c
+  sctputil.c
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(2804): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(2808): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(2844): warning C4267: “+=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(3708): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(3712): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(3727): warning C4267: “+=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(5183): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(5185): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(5202): warning C4267: “函数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(5204): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(7295): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+d:\vsproject\stormwebrtc\external\usrsctplib\netinet\sctputil.c(7311): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  sctp6_usrreq.c
+  正在生成代码...
+  usrsctplib.vcxproj -> D:\VSProject\StormWebrtc\x64\Debug\usrsctplib.lib

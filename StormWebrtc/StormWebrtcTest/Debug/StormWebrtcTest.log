@@ -1,0 +1,221 @@
+﻿asio.lib(asio.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MTd_StaticDebug”(Main.obj 中)
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z) 已经在 libcpmtd.lib(xlock.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ) 已经在 libcpmtd.lib(xlock.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "void __cdecl std::_Debug_message(wchar_t const *,wchar_t const *,unsigned int)" (?_Debug_message@std@@YAXPB_W0I@Z) 已经在 libcpmtd.lib(stdthrow.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "void __cdecl std::_Xbad_alloc(void)" (?_Xbad_alloc@std@@YAXXZ) 已经在 libcpmtd.lib(xthrow.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "void __cdecl std::_Xlength_error(char const *)" (?_Xlength_error@std@@YAXPBD@Z) 已经在 libcpmtd.lib(xthrow.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "void __cdecl std::_Xout_of_range(char const *)" (?_Xout_of_range@std@@YAXPBD@Z) 已经在 libcpmtd.lib(xthrow.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: static class std::locale const & __cdecl std::locale::classic(void)" (?classic@locale@std@@SAABV12@XZ) 已经在 libcpmtd.lib(locale0.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "char const * __cdecl std::_Syserror_map(int)" (?_Syserror_map@std@@YAPBDH@Z) 已经在 libcpmtd.lib(syserror.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "int __cdecl std::_Winerror_map(int)" (?_Winerror_map@std@@YAHH@Z) 已经在 libcpmtd.lib(syserror.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "unsigned long __cdecl std::_Winerror_message(unsigned long,char *,unsigned long)" (?_Winerror_message@std@@YAKKPADK@Z) 已经在 libcpmtd.lib(syserror.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: int __thiscall std::ios_base::flags(void)const " (?flags@ios_base@std@@QBEHXZ) 已经在 libcpmtd.lib(locale.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) 已经在 libcpmtd.lib(locale.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) 已经在 libcpmtd.lib(locale.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >(void)" (??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAE@XZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: virtual __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::~basic_streambuf<char,struct std::char_traits<char> >(void)" (??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) 已经在 libcpmtd.lib(locale.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::eback(void)const " (?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gptr(void)const " (?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pptr(void)const " (?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::egptr(void)const " (?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gbump(int)" (?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setg(char *,char *,char *)" (?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD00@Z) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::epptr(void)const " (?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pbump(int)" (?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setp(char *,char *)" (?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD0@Z) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Pninc(void)" (?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: virtual __thiscall std::basic_ios<char,struct std::char_traits<char> >::~basic_ios<char,struct std::char_traits<char> >(void)" (??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "protected: __thiscall std::basic_ios<char,struct std::char_traits<char> >::basic_ios<char,struct std::char_traits<char> >(void)" (??0?$basic_ios@DU?$char_traits@D@std@@@std@@IAE@XZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: __thiscall std::basic_ostream<char,struct std::char_traits<char> >::basic_ostream<char,struct std::char_traits<char> >(class std::basic_streambuf<char,struct std::char_traits<char> > *,bool)" (??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "public: virtual __thiscall std::basic_ostream<char,struct std::char_traits<char> >::~basic_ostream<char,struct std::char_traits<char> >(void)" (??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ) 已经在 libcpmtd.lib(cout.obj) 中定义
+msvcprtd.lib(MSVCP140D.dll) : error LNK2005: "void __cdecl std::_Xbad_function_call(void)" (?_Xbad_function_call@std@@YAXXZ) 已经在 libcpmtd.lib(xthrow.obj) 中定义
+LIBCMTD.lib(initializers.obj) : warning LNK4098: 默认库“msvcrtd.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 __invalid_parameter 在函数 "public: bool __thiscall std::_List_const_iterator<class std::_List_val<struct std::_List_simple_types<struct std::pair<unsigned int,struct asio::detail::reactor_op_queue<unsigned int>::mapped_type> > > >::operator==(class std::_List_const_iterator<class std::_List_val<struct std::_List_simple_types<struct std::pair<unsigned int,struct asio::detail::reactor_op_queue<unsigned int>::mapped_type> > > > const &)const " (??8?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@IUmapped_type@?$reactor_op_queue@I@detail@asio@@@std@@@std@@@std@@@std@@QBE_NABV01@@Z) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 _atoi 在函数 "class asio::ip::network_v4 __cdecl asio::ip::make_network_v4(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::error_code &)" (?make_network_v4@ip@asio@@YA?AVnetwork_v4@12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAVerror_code@5@@Z) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vswprintf_s 在函数 __vswprintf_s_l 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vsprintf_s 在函数 __vsprintf_s_l 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 _memchr 在函数 "public: static char const * __cdecl std::char_traits<char>::find(char const *,unsigned int,char const &)" (?find@?$char_traits@D@std@@SAPBDPBDIABD@Z) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 _memmove 在函数 "class asio::execution_context::service * * __cdecl std::_Copy_memmove<class asio::execution_context::service * *,class asio::execution_context::service * *>(class asio::execution_context::service * *,class asio::execution_context::service * *,class asio::execution_context::service * *)" (??$_Copy_memmove@PAPAVservice@execution_context@asio@@PAPAV123@@std@@YAPAPAVservice@execution_context@asio@@PAPAV123@00@Z) 中导入
+mbedtls.lib(ssl_tls.obj) : warning LNK4049: 已导入本地定义的符号 _memmove
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 ___std_exception_copy 在函数 "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 ___std_exception_destroy 在函数 "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 __CrtDbgReportW 在函数 "public: bool __thiscall std::_List_const_iterator<class std::_List_val<struct std::_List_simple_types<struct std::pair<unsigned int,struct asio::detail::reactor_op_queue<unsigned int>::mapped_type> > > >::operator==(class std::_List_const_iterator<class std::_List_val<struct std::_List_simple_types<struct std::pair<unsigned int,struct asio::detail::reactor_op_queue<unsigned int>::mapped_type> > > > const &)const " (??8?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@IUmapped_type@?$reactor_op_queue@I@detail@asio@@@std@@@std@@@std@@@std@@QBE_NABV01@@Z) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 ___std_type_info_compare 在函数 "public: bool __thiscall type_info::operator==(class type_info const &)const " (??8type_info@@QBE_NABV0@@Z) 中导入
+asio.lib(asio.obj) : warning LNK4217: 本地定义的符号 _signal 在函数 "public: class std::error_code __thiscall asio::detail::signal_set_service::add(class asio::detail::signal_set_service::implementation_type &,int,class std::error_code &)" (?add@signal_set_service@detail@asio@@QAE?AVerror_code@std@@AAVimplementation_type@123@HAAV45@@Z) 中导入
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(camellia.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(arc4.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(gcm.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _mbedtls_gcm_auth_decrypt 中导入
+mbedtls.lib(ccm.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _ccm_auth_crypt 中导入
+mbedtls.lib(ripemd160.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(sha1.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _mbedtls_sha1 中导入
+mbedtls.lib(sha256.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _mbedtls_sha256_process 中导入
+mbedtls.lib(base64.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(des.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(pkcs5.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _mbedtls_pkcs5_self_test 中导入
+mbedtls.lib(x509.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _printf 中导入
+mbedtls.lib(md5.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _mbedtls_md5 中导入
+mbedtls.lib(aes.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(rsa.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(bignum.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(ecp.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _printf 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(timing.obj) : warning LNK4049: 已导入本地定义的符号 ___acrt_iob_func
+mbedtls.lib(sha512.obj) : warning LNK4217: 本地定义的符号 ___acrt_iob_func 在函数 _mbedtls_sha512 中导入
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 _fclose 在函数 _load_file 中导入
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fclose
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 _fclose 在函数 _mbedtls_entropy_update_seed_file 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fclose
+mbedtls.lib(pkparse.obj) : warning LNK4049: 已导入本地定义的符号 _fclose
+mbedtls.lib(md.obj) : warning LNK4049: 已导入本地定义的符号 _fclose
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 _fopen 在函数 _load_file 中导入
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fopen
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 _fopen 在函数 _mbedtls_entropy_update_seed_file 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fopen
+mbedtls.lib(pkparse.obj) : warning LNK4049: 已导入本地定义的符号 _fopen
+mbedtls.lib(md.obj) : warning LNK4049: 已导入本地定义的符号 _fopen
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 _fread 在函数 _load_file 中导入
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fread
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 _fread 在函数 _mbedtls_entropy_update_seed_file 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fread
+mbedtls.lib(pkparse.obj) : warning LNK4049: 已导入本地定义的符号 _fread
+mbedtls.lib(md.obj) : warning LNK4049: 已导入本地定义的符号 _fread
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fseek
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 _fseek 在函数 _mbedtls_entropy_update_seed_file 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fseek
+mbedtls.lib(pkparse.obj) : warning LNK4049: 已导入本地定义的符号 _fseek
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 _fseek 在函数 _load_file 中导入
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _ftell
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 _ftell 在函数 _mbedtls_entropy_update_seed_file 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _ftell
+mbedtls.lib(pkparse.obj) : warning LNK4049: 已导入本地定义的符号 _ftell
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 _ftell 在函数 _load_file 中导入
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 _fwrite 在函数 _mbedtls_entropy_write_seed_file 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fwrite
+mbedtls.lib(bignum.obj) : warning LNK4049: 已导入本地定义的符号 _fwrite
+mbedtls.lib(hmac_drbg.obj) : warning LNK4049: 已导入本地定义的符号 _fwrite
+mbedtls.lib(hmac_drbg.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 _mbedtls_hmac_drbg_self_test 中导入
+mbedtls.lib(camellia.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 __vfprintf_l 中导入
+mbedtls.lib(arc4.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(gcm.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 _mbedtls_gcm_self_test 中导入
+mbedtls.lib(ccm.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(ripemd160.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(sha1.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 _mbedtls_sha1_self_test 中导入
+mbedtls.lib(sha256.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 _mbedtls_sha256_self_test 中导入
+mbedtls.lib(base64.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(des.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(pkcs5.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(x509.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(dhm.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(md5.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(aes.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(rsa.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(bignum.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(ecp.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(entropy.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 __vfprintf_l 中导入
+mbedtls.lib(ctr_drbg.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(timing.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vfprintf
+mbedtls.lib(sha512.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vfprintf 在函数 _mbedtls_sha512_self_test 中导入
+usrsctplib.lib(sctp_auth.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_asconf.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_timer.obj) : warning LNK4217: 本地定义的符号 _free 在函数 _sctp_heartbeat_timer 中导入
+usrsctplib.lib(sctp_indata.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_pcb.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_input.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_userspace.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(user_recv_thread.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(user_mbuf.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_output.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctputil.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_bsd_addr.obj) : warning LNK4217: 本地定义的符号 _free 在函数 _sctp_init_vrf_list 中导入
+mbedtls.lib(cipher_wrap.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(asn1write.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(user_socket.obj) : warning LNK4049: 已导入本地定义的符号 _free
+usrsctplib.lib(sctp_usrreq.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(x509.obj) : warning LNK4217: 本地定义的符号 _free 在函数 _mbedtls_x509_dn_gets 中导入
+mbedtls.lib(dhm.obj) : warning LNK4217: 本地定义的符号 _free 在函数 _mbedtls_dhm_parse_dhm 中导入
+mbedtls.lib(ssl_cli.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(md_wrap.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(bignum.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(ecp.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(asn1parse.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(pem.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(ssl_cache.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(md.obj) : warning LNK4217: 本地定义的符号 _free 在函数 _mbedtls_md_info_from_type 中导入
+mbedtls.lib(rsa.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(pk_wrap.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(pkparse.obj) : warning LNK4217: 本地定义的符号 _free 在函数 _mbedtls_pk_load_file 中导入
+mbedtls.lib(x509_crt.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(ssl_tls.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(ssl_srv.obj) : warning LNK4049: 已导入本地定义的符号 _free
+mbedtls.lib(rsa.obj) : warning LNK4217: 本地定义的符号 _rand 在函数 _myrand 中导入
+usrsctplib.lib(user_environment.obj) : warning LNK4049: 已导入本地定义的符号 _rand
+mbedtls.lib(platform.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vsnprintf_s 在函数 __vsnprintf_s_l 中导入
+mbedtls.lib(debug.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vsnprintf_s
+usrsctplib.lib(user_socket.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vsnprintf_s
+usrsctplib.lib(user_socket.obj) : warning LNK4217: 本地定义的符号 __errno 在函数 _userspace_sctp_sendmbuf 中导入
+usrsctplib.lib(user_socket.obj) : warning LNK4217: 本地定义的符号 _strncpy_s 在函数 _usrsctp_dumppacket 中导入
+usrsctplib.lib(sctp_indata.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_userspace.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(user_recv_thread.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_auth.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_asconf.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctputil.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_bsd_addr.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_pcb.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_input.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(user_socket.obj) : warning LNK4217: 本地定义的符号 _malloc 在函数 _copyiniov 中导入
+usrsctplib.lib(sctp_usrreq.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(user_mbuf.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(sctp_output.obj) : warning LNK4049: 已导入本地定义的符号 _malloc
+usrsctplib.lib(user_socket.obj) : warning LNK4217: 本地定义的符号 _exit 在函数 _init_sync 中导入
+usrsctplib.lib(user_socket.obj) : warning LNK4217: 本地定义的符号 _abort 在函数 _soalloc 中导入
+usrsctplib.lib(sctp_usrreq.obj) : warning LNK4217: 本地定义的符号 _srand 在函数 _sctp_init 中导入
+usrsctplib.lib(sctp_indata.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vsprintf
+usrsctplib.lib(sctp_output.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vsprintf 在函数 _vsnprintf 中导入
+usrsctplib.lib(sctp_pcb.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vsprintf 在函数 _SCTP6_ARE_ADDR_EQUAL 中导入
+usrsctplib.lib(sctp_input.obj) : warning LNK4217: 本地定义的符号 ___stdio_common_vsprintf 在函数 _sctp_process_init_ack 中导入
+usrsctplib.lib(sctp_asconf.obj) : warning LNK4049: 已导入本地定义的符号 ___stdio_common_vsprintf
+usrsctplib.lib(sctp_pcb.obj) : warning LNK4217: 本地定义的符号 _strncmp 在函数 _sctp_del_addr_from_vrf 中导入
+asio.lib(asio.obj) : error LNK2019: 无法解析的外部符号 __imp___wassert，该符号在函数 "public: void __thiscall asio::detail::win_event::clear<class asio::detail::scoped_lock<class asio::detail::win_mutex> >(class asio::detail::scoped_lock<class asio::detail::win_mutex> &)" (??$clear@V?$scoped_lock@Vwin_mutex@detail@asio@@@detail@asio@@@win_event@detail@asio@@QAEXAAV?$scoped_lock@Vwin_mutex@detail@asio@@@12@@Z) 中被引用
+asio.lib(asio.obj) : error LNK2019: 无法解析的外部符号 __imp___beginthreadex，该符号在函数 "private: void __thiscall asio::detail::win_thread::start_thread(class asio::detail::win_thread::func_base *,unsigned int)" (?start_thread@win_thread@detail@asio@@AAEXPAVfunc_base@123@I@Z) 中被引用
+mbedtls.lib(pkparse.obj) : error LNK2019: 无法解析的外部符号 __imp__strstr，该符号在函数 _mbedtls_pk_load_file 中被引用
+mbedtls.lib(x509_crt.obj) : error LNK2001: 无法解析的外部符号 __imp__strstr
+mbedtls.lib(pem.obj) : error LNK2001: 无法解析的外部符号 __imp__strstr
+mbedtls.lib(dhm.obj) : error LNK2001: 无法解析的外部符号 __imp__strstr
+mbedtls.lib(cipher_wrap.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(asn1write.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+usrsctplib.lib(user_socket.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(x509.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(dhm.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(ssl_cli.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(md_wrap.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(bignum.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(ecp.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(asn1parse.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(pem.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(ssl_cache.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(md.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(rsa.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(pk_wrap.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(pkparse.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(x509_crt.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(ssl_tls.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+mbedtls.lib(ssl_srv.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc
+usrsctplib.lib(sctp_usrreq.obj) : error LNK2001: 无法解析的外部符号 __imp___time64
+mbedtls.lib(ssl_srv.obj) : error LNK2001: 无法解析的外部符号 __imp___time64
+mbedtls.lib(ssl_cookie.obj) : error LNK2001: 无法解析的外部符号 __imp___time64
+mbedtls.lib(ssl_cache.obj) : error LNK2001: 无法解析的外部符号 __imp___time64
+mbedtls.lib(ssl_cli.obj) : error LNK2001: 无法解析的外部符号 __imp___time64
+mbedtls.lib(md.obj) : error LNK2019: 无法解析的外部符号 __imp__ferror，该符号在函数 _mbedtls_md_file 中被引用
+mbedtls.lib(bignum.obj) : error LNK2019: 无法解析的外部符号 __imp__fgets，该符号在函数 _mbedtls_mpi_read_file 中被引用
+usrsctplib.lib(user_socket.obj) : error LNK2019: 无法解析的外部符号 __imp___localtime64_s，该符号在函数 _localtime_s 中被引用
+usrsctplib.lib(user_socket.obj) : error LNK2019: 无法解析的外部符号 __imp___ftime64，该符号在函数 _ftime 中被引用
+usrsctplib.lib(sctp_userspace.obj) : error LNK2001: 无法解析的外部符号 __imp___ftime64
+usrsctplib.lib(sctp_bsd_addr.obj) : error LNK2019: 无法解析的外部符号 __imp___strdup，该符号在函数 _sctp_init_ifns_for_vrf 中被引用
+usrsctplib.lib(sctp_userspace.obj) : error LNK2001: 无法解析的外部符号 __imp___strdup
+D:\VSProject\StormWebrtc\Debug\StormWebrtcTest.exe : fatal error LNK1120: 10 个无法解析的外部命令

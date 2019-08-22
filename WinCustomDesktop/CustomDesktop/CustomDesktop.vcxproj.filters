@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Helper">
+      <UniqueIdentifier>{7a461ee8-4194-4dde-97f0-d58c7220a129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\API">
+      <UniqueIdentifier>{49f2b649-3004-4865-83c3-fca5b831d607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\API">
+      <UniqueIdentifier>{45357134-a6ae-4416-a550-b97a1b665376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Module">
+      <UniqueIdentifier>{8f10627a-1bf0-4e99-8199-d53f5a1e0f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Module">
+      <UniqueIdentifier>{d3fc6086-9e93-447f-af58-2816804e8378}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IATHook.h">
+      <Filter>头文件\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>头文件\Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\EventHelper.h">
+      <Filter>头文件\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CDEvents.h">
+      <Filter>头文件\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CDAPI.h">
+      <Filter>头文件\API</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferedRendering.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="HookDesktop.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="CDAPIModule.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CDCommon.h">
+      <Filter>头文件\API</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginManager.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckCovered.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayMenu.h">
+      <Filter>头文件\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CDEvents.cpp">
+      <Filter>源文件\API</Filter>
+    </ClCompile>
+    <ClCompile Include="CDAPI.cpp">
+      <Filter>源文件\API</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferedRendering.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginManager.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="HookDesktop.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckCovered.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayMenu.cpp">
+      <Filter>源文件\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CustomDesktop.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TrayIcon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

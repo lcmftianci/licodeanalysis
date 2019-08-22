@@ -1,0 +1,7 @@
+????-??-??:  Version ?.?.?
+- Fix possible memory corruption with inline files.
+- Improve error resilience and stability.
+- Add support for Volume Descriptor Pointer.
+
+2017-06-07: Version 1.0.0
+
