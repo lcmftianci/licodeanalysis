@@ -1,7 +1,13 @@
 pjproject-2.9/pjproject-vs14.VC.db
 pjproject-2.9/pjsip-apps/src/pjsua/winrt/cli/wp8/obj/
 pjproject-2.9/pjsip-apps/src/pjsua/winrt/cli/comp/output/
-pjproject-2.9/rexsample/
+pjproject-2.9/third_party/lib
+pjproject-2.9/rexsample/x64
+pjproject-2.9/rexsample/Debug/
+pjproject-2.9/rexsample/Release/
+pjproject-2.9/rexsample/rexsample.vcxproj.filters
+
+*.filters
 
 OutDir/Debug/lilog.log
 OutDir/Debug/logs/
