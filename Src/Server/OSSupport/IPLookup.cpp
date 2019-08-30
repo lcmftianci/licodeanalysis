@@ -61,10 +61,6 @@ bool cIPLookup::Lookup(const AString & a_IP)
 	return true;
 }
 
-
-
-
-
 void cIPLookup::Callback(int a_Result, char a_Type, int a_Count, int a_Ttl, void * a_Addresses, void * a_Self)
 {
 	// Get the Self class:

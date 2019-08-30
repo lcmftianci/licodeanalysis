@@ -1,3 +1,15 @@
+pjproject-2.9/pjproject-vs14.VC.db
+pjproject-2.9/pjsip-apps/src/pjsua/winrt/cli/wp8/obj/
+pjproject-2.9/pjsip-apps/src/pjsua/winrt/cli/comp/output/
+pjproject-2.9/rexsample/
+
+OutDir/Debug/lilog.log
+OutDir/Debug/logs/
+OutDir/Debug/signal_log/
+pjproject-2.9/UpgradeLog.htm
+pjproject-2.9/pjproject-vs14.VC.VC.opendb
+pjproject-2.9/pjsip-apps/bin/
+
 # 此为注释 ,将被 Git 忽略
 # 忽略所有 .a 结尾的文件
 *.a

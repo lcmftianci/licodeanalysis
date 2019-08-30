@@ -223,6 +223,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\INSTALL.txt" />
-    <Text Include="..\..\RELNOTES.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.md" />
   </ItemGroup>
 </Project>

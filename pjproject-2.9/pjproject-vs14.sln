@@ -114,6 +114,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libwebrtc", "third_party\bu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swig_java_pjsua2", "pjsip-apps\build\swig_java_pjsua2.vcxproj", "{63AC6D7A-5D97-40C2-9AF2-E13AA1F9567C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rexsample", "rexsample\rexsample.vcxproj", "{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		pjsip-apps\src\pjsua\winrt\cli\comp\pjsua_cli_shared_comp.vcxitems*{207e7bd4-7b11-4a40-ba3a-cc627762a7b6}*SharedItemsImports = 4
@@ -1957,6 +1959,50 @@ Global
 		{63AC6D7A-5D97-40C2-9AF2-E13AA1F9567C}.Release-Static|ARM.ActiveCfg = Release|Win32
 		{63AC6D7A-5D97-40C2-9AF2-E13AA1F9567C}.Release-Static|Win32.ActiveCfg = Release|Win32
 		{63AC6D7A-5D97-40C2-9AF2-E13AA1F9567C}.Release-Static|x64.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug|ARM.ActiveCfg = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug|Win32.Build.0 = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug|x64.ActiveCfg = Debug|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug|x64.Build.0 = Debug|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|Any CPU.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|Any CPU.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|ARM.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|ARM.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|Win32.ActiveCfg = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|Win32.Build.0 = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|x64.ActiveCfg = Debug|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Dynamic|x64.Build.0 = Debug|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|Any CPU.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|Any CPU.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|ARM.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|ARM.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|Win32.ActiveCfg = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|Win32.Build.0 = Debug|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|x64.ActiveCfg = Debug|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Debug-Static|x64.Build.0 = Debug|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release|Any CPU.ActiveCfg = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release|ARM.ActiveCfg = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release|Win32.ActiveCfg = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release|Win32.Build.0 = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release|x64.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release|x64.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|Any CPU.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|Any CPU.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|ARM.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|ARM.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|Win32.ActiveCfg = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|Win32.Build.0 = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|x64.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Dynamic|x64.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|Any CPU.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|Any CPU.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|ARM.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|ARM.Build.0 = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|Win32.ActiveCfg = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|Win32.Build.0 = Release|Win32
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|x64.ActiveCfg = Release|x64
+		{ECC569C1-CCD8-40FE-ADDC-BDD1F8D371B0}.Release-Static|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

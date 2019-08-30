@@ -634,6 +634,9 @@
     <ClInclude Include="..\include\pjmedia\wav_port.h" />
     <ClInclude Include="..\include\pjmedia\wsola.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
