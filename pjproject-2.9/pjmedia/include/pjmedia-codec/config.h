@@ -41,7 +41,6 @@
 #   include <pjmedia-codec/config_auto.h>
 #endif
 
-
 /**
  * Unless specified otherwise, L16 codec is included by default.
  */

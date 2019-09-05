@@ -95,9 +95,7 @@ PJ_DEF(const char*) pjmedia_sdp_neg_state_str(pjmedia_sdp_neg_state state)
 /*
  * Create with local offer.
  */
-PJ_DEF(pj_status_t) pjmedia_sdp_neg_create_w_local_offer( pj_pool_t *pool,
-				      const pjmedia_sdp_session *local,
-				      pjmedia_sdp_neg **p_neg)
+PJ_DEF(pj_status_t) pjmedia_sdp_neg_create_w_local_offer( pj_pool_t *pool, const pjmedia_sdp_session *local, pjmedia_sdp_neg **p_neg)
 {
     pjmedia_sdp_neg *neg;
     pj_status_t status;
@@ -108,7 +106,9 @@ PJ_DEF(pj_status_t) pjmedia_sdp_neg_create_w_local_offer( pj_pool_t *pool,
     *p_neg = NULL;
 
     /* Validate local offer. */
-    PJ_ASSERT_RETURN((status=pjmedia_sdp_validate(local))==PJ_SUCCESS, status);
+    //PJ_ASSERT_RETURN((status=pjmedia_sdp_validate(local))==PJ_SUCCESS, status);
+	status = pjmedia_sdp_validate(local);
+	PJ_ASSERT_RETURN(status == PJ_SUCCESS, status);
 
     /* Create and initialize negotiator. */
     neg = PJ_POOL_ZALLOC_T(pool, pjmedia_sdp_neg);

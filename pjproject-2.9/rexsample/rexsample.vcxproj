@@ -89,11 +89,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)pjlib-util/include;$(SolutionDir)pjsip/include;$(SolutionDir)pjlib/include;$(SolutionDir)pjsip/include/pjsua-lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)pjlib-util/include;$(SolutionDir)pjsip/include;$(SolutionDir)pjlib/include;$(SolutionDir)pjsip/include/pjsua-lib;$(SolutionDir)pjmedia/include;$(SolutionDir)pjnath/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\commonlib\lib\ffmpeg;$(SolutionDir)lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -148,6 +149,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="rexsample.cpp" />
+    <ClCompile Include="RXLogin.cpp" />
+    <ClCompile Include="SimpleUA.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

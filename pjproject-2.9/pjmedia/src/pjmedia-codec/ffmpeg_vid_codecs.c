@@ -45,13 +45,16 @@
 					        LIBAVCODEC_VERSION_MINOR >= minor))
 
 #include "../pjmedia/ffmpeg_util.h"
-#include <libavcodec/avcodec.h>
-#include <libavformat/avformat.h>
-#if LIBAVCODEC_VER_AT_LEAST(53,20)
-  /* Needed by 264 so far, on libavcodec 53.20 */
-# include <libavutil/opt.h>
-#endif
 
+//extern "C" 
+//{
+	#include <libavcodec/avcodec.h>
+	#include <libavformat/avformat.h>
+	#if LIBAVCODEC_VER_AT_LEAST(53,20)
+		/* Needed by 264 so far, on libavcodec 53.20 */
+	# include <libavutil/opt.h>
+	#endif
+//}
 
 /* Various compatibility */
 

@@ -627,8 +627,7 @@ int main(int argc, char *argv[])
     }
 
     /* Get codec default param for info */
-    status = pjmedia_vid_codec_mgr_get_default_param(NULL, codec_info, 
-				                     &codec_param);
+    status = pjmedia_vid_codec_mgr_get_default_param(NULL, codec_info, &codec_param);
     pj_assert(status == PJ_SUCCESS);
     
     /* Set outgoing video size */

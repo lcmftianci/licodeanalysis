@@ -119,13 +119,16 @@ PJ_DEF(char*) pj_sockaddr_print( const pj_sockaddr_t *addr,
  * is specified, then the function will resolve the host into the IP
  * address.
  */
-PJ_DEF(pj_status_t) pj_sockaddr_in_set_str_addr( pj_sockaddr_in *addr,
-					         const pj_str_t *str_addr)
+PJ_DEF(pj_status_t) pj_sockaddr_in_set_str_addr( pj_sockaddr_in *addr, const pj_str_t *str_addr)
 {
     PJ_CHECK_STACK();
 
-    PJ_ASSERT_RETURN(!str_addr || str_addr->slen < PJ_MAX_HOSTNAME, 
-                     (addr->sin_addr.s_addr=PJ_INADDR_NONE, PJ_EINVAL));
+	if (str_addr != NULL) {
+		printf("addr-lendth:%d\n", str_addr->slen);
+		printf("addr-str:%s\n", str_addr->ptr);
+	}
+
+    PJ_ASSERT_RETURN(!str_addr || str_addr->slen < PJ_MAX_HOSTNAME, (addr->sin_addr.s_addr=PJ_INADDR_NONE, PJ_EINVAL));
 
     PJ_SOCKADDR_RESET_LEN(addr);
     addr->sin_family = PJ_AF_INET;

@@ -400,8 +400,7 @@ static int call_get_secure_level(pjsua_call *call)
 
 /* Outgoing call callback when media transport creation is completed. */
 static pj_status_t
-on_make_call_med_tp_complete(pjsua_call_id call_id,
-                             const pjsua_med_tp_state_info *info)
+on_make_call_med_tp_complete(pjsua_call_id call_id, const pjsua_med_tp_state_info *info)
 {
     pjmedia_sdp_session *offer = NULL;
     pjsip_inv_session *inv = NULL;
@@ -451,10 +450,11 @@ on_make_call_med_tp_complete(pjsua_call_id call_id,
     }
 
     /* Create offer */
-    if ((call->opt.flag & PJSUA_CALL_NO_SDP_OFFER) == 0) {
-        status = pjsua_media_channel_create_sdp(call->index, dlg->pool, NULL,
-                                                &offer, NULL);
-        if (status != PJ_SUCCESS) {
+    if ((call->opt.flag & PJSUA_CALL_NO_SDP_OFFER) == 0)
+	{
+        status = pjsua_media_channel_create_sdp(call->index, dlg->pool, NULL, &offer, NULL);
+        if (status != PJ_SUCCESS) 
+		{
             pjsua_perror(THIS_FILE, "Error initializing media channel", status);
             goto on_error;
         }
@@ -524,9 +524,7 @@ on_make_call_med_tp_complete(pjsua_call_id call_id,
 	goto on_error;
     }
 
-
     /* Add additional headers etc */
-
     pjsua_process_msg_data( tdata,
                             call->async_call.call_var.out_call.msg_data);
 
@@ -534,7 +532,6 @@ on_make_call_med_tp_complete(pjsua_call_id call_id,
     ++pjsua_var.call_cnt;
 
     /* Send initial INVITE: */
-
     status = pjsip_inv_send_msg(inv, tdata);
     if (status != PJ_SUCCESS) {
 	cb_called = PJ_TRUE;
@@ -890,28 +887,27 @@ PJ_DEF(pj_status_t) pjsua_call_make_call(pjsua_acc_id acc_id,
     /* Create suitable Contact header unless a Contact header has been
      * set in the account.
      */
-    if (acc->contact.slen) {
-	contact = acc->contact;
-    } else {
-	status = pjsua_acc_create_uac_contact(tmp_pool, &contact,
-					      acc_id, dest_uri);
-	if (status != PJ_SUCCESS) {
-	    pjsua_perror(THIS_FILE, "Unable to generate Contact header",
-			 status);
-	    goto on_error;
-	}
+    if (acc->contact.slen)
+	{
+		contact = acc->contact;
+    } 
+	else 
+	{
+		status = pjsua_acc_create_uac_contact(tmp_pool, &contact, acc_id, dest_uri);
+		if (status != PJ_SUCCESS) 
+		{
+			pjsua_perror(THIS_FILE, "Unable to generate Contact header", status);
+			goto on_error;
+		}
     }
 
     /* Create outgoing dialog: */
-    status = pjsip_dlg_create_uac( pjsip_ua_instance(),
-				   &acc->cfg.id, &contact,
-				   dest_uri,
-                                   (msg_data && msg_data->target_uri.slen?
-                                    &msg_data->target_uri: dest_uri),
-                                   &dlg);
-    if (status != PJ_SUCCESS) {
-	pjsua_perror(THIS_FILE, "Dialog creation failed", status);
-	goto on_error;
+    status = pjsip_dlg_create_uac( pjsip_ua_instance(),  &acc->cfg.id, &contact,  dest_uri,
+                                   (msg_data && msg_data->target_uri.slen? &msg_data->target_uri: dest_uri), &dlg);
+    if (status != PJ_SUCCESS) 
+	{
+		pjsua_perror(THIS_FILE, "Dialog creation failed", status);
+		goto on_error;
     }
 
     /* Increment the dialog's lock otherwise when invite session creation
@@ -930,9 +926,9 @@ PJ_DEF(pj_status_t) pjsua_call_make_call(pjsua_acc_id acc_id,
     /* Store variables required for the callback after the async
      * media transport creation is completed.
      */
-    if (msg_data) {
-	call->async_call.call_var.out_call.msg_data = pjsua_msg_data_clone(
-                                                          dlg->pool, msg_data);
+    if (msg_data) 
+	{
+		call->async_call.call_var.out_call.msg_data = pjsua_msg_data_clone(dlg->pool, msg_data);
     }
     call->async_call.dlg = dlg;
 
@@ -949,10 +945,11 @@ PJ_DEF(pj_status_t) pjsua_call_make_call(pjsua_acc_id acc_id,
                                           NULL, NULL, PJ_TRUE,
                                           &on_make_call_med_tp_complete);
     }
-    if (status == PJ_SUCCESS) {
+    if (status == PJ_SUCCESS)
+	{
         status = on_make_call_med_tp_complete(call->index, NULL);
         if (status != PJ_SUCCESS)
-	    goto on_error;
+			goto on_error;
     } else if (status != PJ_EPENDING) {
 	pjsua_perror(THIS_FILE, "Error initializing media channel", status);
         pjsip_dlg_dec_session(dlg, &pjsua_var.mod);

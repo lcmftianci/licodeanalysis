@@ -55,7 +55,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E378A1FC-0C9C-4462-860F-7E60BC1BF84E}</ProjectGuid>
     <RootNamespace>samples</RootNamespace>
-    <Keyword>MakeFileProj</Keyword>    
+    <Keyword>MakeFileProj</Keyword>
     <!-- Specific windows store/UWP property -->
     <DefaultLanguage>en-US</DefaultLanguage>
   </PropertyGroup>
@@ -123,9 +123,10 @@
   <!-- Override the PlatformToolset -->
   <PropertyGroup>
     <PlatformToolset>$(BuildToolset)</PlatformToolset>
-    <CharacterSet Condition="'$(API_Family)'!='WinDesktop'"></CharacterSet>
+    <CharacterSet Condition="'$(API_Family)'!='WinDesktop'">
+    </CharacterSet>
     <ConfigurationType Condition="'$(API_Family)'=='UWP' Or '$(API_Family)'=='WinPhone8'">StaticLibrary</ConfigurationType>
-  </PropertyGroup>  
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
@@ -177,9 +178,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
   </ImportGroup>
-  <PropertyGroup Label="UserMacros" />  
+  <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>14.0.22823.1</_ProjectFileVersion>        
+    <_ProjectFileVersion>14.0.22823.1</_ProjectFileVersion>
   </PropertyGroup>
   <!-- Compile and link option definition -->
   <ItemDefinitionGroup>
@@ -187,12 +188,12 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <AdditionalIncludeDirectories>../../pjsip/include;../../pjlib/include;../../pjlib-util/include;../../pjmedia/include;../../pjnath/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary Condition="'$(API_Family)'=='UWP'">MultiThreadedDebugDLL</RuntimeLibrary>      
+      <RuntimeLibrary Condition="'$(API_Family)'=='UWP'">MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Lib>
       <AdditionalOptions>/Ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
-  </ItemDefinitionGroup>    
+  </ItemDefinitionGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\output\$(ProjectName)-i386-$(Platform)-vs8-$(Configuration)\</OutDir>
     <IntDir>$(OutDir)</IntDir>
@@ -216,6 +217,8 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win32 /a</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win32 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>D:\commonlib\lib\ffmpeg;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>.\output\$(ProjectName)-x86_64-$(Platform)-vs8-$(Configuration)\</OutDir>
@@ -224,6 +227,7 @@
     <NMakeReBuildCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win64 /a </NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>nmake /NOLOGO /S /f Samples-vc.mak BUILD_MODE=debug VC_VER=14 ARCH=win64 clean</NMakeCleanCommandLine>
     <NMakeOutput>All samples</NMakeOutput>
+    <LibraryPath>D:\commonlib\x64\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Static|Win32'">
     <OutDir>.\output\$(ProjectName)-i386-$(Platform)-vs8-$(Configuration)\</OutDir>
@@ -375,8 +379,8 @@
     <ClCompile Include="..\src\samples\sipecho.c" />
     <ClCompile Include="..\src\samples\siprtp.c">
       <ExcludedFromBuild Condition="'$(API_Family)'!='WinDesktop'">true</ExcludedFromBuild>
-    </ClCompile>  
-    <ClCompile Include="..\src\samples\siprtp_report.c">    
+    </ClCompile>
+    <ClCompile Include="..\src\samples\siprtp_report.c">
       <ExcludedFromBuild Condition="'$(API_Family)'!='WinDesktop'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\src\samples\sipstateless.c" />

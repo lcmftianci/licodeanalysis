@@ -176,8 +176,9 @@ PJ_DEF(pj_status_t) pjmedia_rtp_decode_rtp2(
     *hdr = (pjmedia_rtp_hdr*)pkt;
 
     /* Check RTP header sanity. */
-    if ((*hdr)->v != RTP_VERSION) {
-	return PJMEDIA_RTP_EINVER;
+    if ((*hdr)->v != RTP_VERSION) 
+	{
+		return PJMEDIA_RTP_EINVER;
     }
 
     /* Payload is located right after header plus CSRC */

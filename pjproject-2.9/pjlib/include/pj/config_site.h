@@ -1,42 +1,12 @@
-/*
- * Put this file in pjlib/include/pj
- */
+// Uncomment to get minimum footprint (suitable for 1-2 concurrent calls only)
+//#define PJ_CONFIG_MINIMAL_SIZE
 
-/* sample configure command:
-   CFLAGS="-g -Wno-unused-label" ./aconfigure --enable-ext-sound --disable-speex-aec --disable-g711-codec --disable-l16-codec --disable-gsm-codec --disable-g722-codec --disable-g7221-codec --disable-speex-codec --disable-ilbc-codec --disable-opencore-amrnb --disable-sdl --disable-ffmpeg --disable-v4l2
- */
+// Uncomment to get maximum performance
+//#define PJ_CONFIG_MAXIMUM_SPEED
 
-#define THIRD_PARTY_MEDIA			1
+#include <pj/config_site_sample.h> 
 
-#if THIRD_PARTY_MEDIA
-/*
- * Sample settings for using third party media with pjsua-lib
- */
-#	define PJSUA_MEDIA_HAS_PJMEDIA		1
-#	define PJMEDIA_HAS_G711_CODEC		0
-#	define PJMEDIA_HAS_ALAW_ULAW_TABLE	0
-#	define PJMEDIA_RESAMPLE_IMP		PJMEDIA_RESAMPLE_NONE
-#	define PJMEDIA_HAS_SPEEX_AEC		0
-
-#	define PJMEDIA_HAS_L16_CODEC		0
-#	define PJMEDIA_HAS_GSM_CODEC		0
-#	define PJMEDIA_HAS_SPEEX_CODEC		0
-#	define PJMEDIA_HAS_ILBC_CODEC		0
-#	define PJMEDIA_HAS_G722_CODEC		0
-#	define PJMEDIA_HAS_G7221_CODEC		0
-#	define PJMEDIA_HAS_OPENCORE_AMRNB_CODEC	0
-
-#	define PJMEDIA_HAS_VIDEO		1
-#	define PJMEDIA_HAS_FFMPEG		0
-
-#	undef PJMEDIA_VIDEO_DEV_HAS_SDL
-#	define PJMEDIA_VIDEO_DEV_HAS_SDL	0
-#	define PJMEDIA_VIDEO_DEV_HAS_QT		0
-#	define PJMEDIA_VIDEO_DEV_HAS_IOS	0
-#	define PJMEDIA_VIDEO_DEV_HAS_DSHOW	0
-#	define PJMEDIA_VIDEO_DEV_HAS_CBAR_SRC	0
-#	define PJMEDIA_VIDEO_DEV_HAS_FFMPEG	0
-#	undef PJMEDIA_VIDEO_DEV_HAS_V4L2
-#	define PJMEDIA_VIDEO_DEV_HAS_V4L2	0
-#endif	/* THIRD_PARTY_MEDIA */
-
+#define PJMEDIA_HAS_FFMPEG_VID_CODEC 1
+#define PJMEDIA_HAS_LIBAVFORMAT 1
+//±‡“ÎŒ Ã‚ —‘Œ‡ËÚ
+#define 	FF_INPUT_BUFFER_PADDING_SIZE   32

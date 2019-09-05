@@ -117,9 +117,7 @@ PJ_DEF(pjmedia_vid_codec_param*) pjmedia_vid_codec_param_clone(
 /*
  * Initialize codec manager.
  */
-PJ_DEF(pj_status_t) pjmedia_vid_codec_mgr_create(
-                                            pj_pool_t *pool,
-                                            pjmedia_vid_codec_mgr **p_mgr)
+PJ_DEF(pj_status_t) pjmedia_vid_codec_mgr_create(pj_pool_t *pool, pjmedia_vid_codec_mgr **p_mgr)
 {
     pjmedia_vid_codec_mgr *mgr;
     pj_status_t status;
@@ -430,24 +428,21 @@ PJ_DEF(pj_status_t) pjmedia_vid_codec_mgr_find_codecs_by_id(
 
     pj_mutex_lock(mgr->mutex);
 
-    for (i=0; i<mgr->codec_cnt; ++i) {
-
-	if (codec_id->slen == 0 ||
-	    pj_strnicmp2(codec_id, mgr->codec_desc[i].id, 
-			 codec_id->slen) == 0) 
+    for (i=0; i<mgr->codec_cnt; ++i) 
 	{
+		if (codec_id->slen == 0 || pj_strnicmp2(codec_id, mgr->codec_desc[i].id,  codec_id->slen) == 0) 
+		{
 
-	    if (p_info)
-		p_info[found] = &mgr->codec_desc[i].info;
-	    if (prio)
-		prio[found] = mgr->codec_desc[i].prio;
+			if (p_info)
+			p_info[found] = &mgr->codec_desc[i].info;
+			if (prio)
+			prio[found] = mgr->codec_desc[i].prio;
 
-	    ++found;
+			++found;
 
-	    if (found >= *count)
-		break;
-	}
-
+			if (found >= *count)
+			break;
+		}
     }
 
     pj_mutex_unlock(mgr->mutex);

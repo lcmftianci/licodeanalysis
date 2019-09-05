@@ -621,117 +621,113 @@ PJ_DEF(pj_status_t) pjmedia_endpt_create_video_sdp(pjmedia_endpt *endpt,
 	return status;
 
     cnt = PJ_ARRAY_SIZE(codec_info);
-    status = pjmedia_vid_codec_mgr_enum_codecs(NULL, &cnt, 
-					       codec_info, codec_prio);
+    status = pjmedia_vid_codec_mgr_enum_codecs(NULL, &cnt, codec_info, codec_prio);
 
     /* Check that there are not too many codecs */
-    PJ_ASSERT_RETURN(0 <= PJMEDIA_MAX_SDP_FMT,
-		     PJ_ETOOMANY);
+    PJ_ASSERT_RETURN(0 <= PJMEDIA_MAX_SDP_FMT, PJ_ETOOMANY);
 
     /* Add format, rtpmap, and fmtp (when applicable) for each codec */
-    for (i=0; i<cnt; ++i) {
-	pjmedia_sdp_rtpmap rtpmap;
-	pjmedia_vid_codec_param codec_param;
-	pj_str_t *fmt;
-	pjmedia_video_format_detail *vfd;
-
-	pj_bzero(&rtpmap, sizeof(rtpmap));
-
-	if (codec_prio[i] == PJMEDIA_CODEC_PRIO_DISABLED)
-	    break;
-
-	if (i > PJMEDIA_MAX_SDP_FMT) {
-	    /* Too many codecs, perhaps it is better to tell application by
-	     * returning appropriate status code.
-	     */
-	    PJ_PERROR(3,(THIS_FILE, PJ_ETOOMANY,
-			"Skipping some video codecs"));
-	    break;
-	}
-
-	/* Must support RTP packetization and bidirectional */
-	if ((codec_info[i].packings & PJMEDIA_VID_PACKING_PACKETS) == 0 ||
-	    codec_info[i].dir != PJMEDIA_DIR_ENCODING_DECODING)
+    for (i=0; i<cnt; ++i) 
 	{
-	    continue;
-	}
+		pjmedia_sdp_rtpmap rtpmap;
+		pjmedia_vid_codec_param codec_param;
+		pj_str_t *fmt;
+		pjmedia_video_format_detail *vfd;
 
-	pjmedia_vid_codec_mgr_get_default_param(NULL, &codec_info[i],
-						&codec_param);
+		pj_bzero(&rtpmap, sizeof(rtpmap));
 
-	fmt = &m->desc.fmt[m->desc.fmt_count++];
-	fmt->ptr = (char*) pj_pool_alloc(pool, 8);
-	fmt->slen = pj_utoa(codec_info[i].pt, fmt->ptr);
-	rtpmap.pt = *fmt;
+		if (codec_prio[i] == PJMEDIA_CODEC_PRIO_DISABLED)
+			break;
 
-	/* Encoding name */
-	rtpmap.enc_name = codec_info[i].encoding_name;
+		if (i > PJMEDIA_MAX_SDP_FMT)
+		{
+			/* Too many codecs, perhaps it is better to tell application by
+			 * returning appropriate status code.
+			 */
+			PJ_PERROR(3,(THIS_FILE, PJ_ETOOMANY, "Skipping some video codecs"));
+			break;
+		}
 
-	/* Clock rate */
-	rtpmap.clock_rate = codec_info[i].clock_rate;
+		/* Must support RTP packetization and bidirectional */
+		if ((codec_info[i].packings & PJMEDIA_VID_PACKING_PACKETS) == 0 ||	codec_info[i].dir != PJMEDIA_DIR_ENCODING_DECODING)
+		{
+			continue;
+		}
 
-	if (codec_info[i].pt >= 96 || pjmedia_add_rtpmap_for_static_pt) {
-	    pjmedia_sdp_rtpmap_to_attr(pool, &rtpmap, &attr);
-	    m->attr[m->attr_count++] = attr;
-	}
+		pjmedia_vid_codec_mgr_get_default_param(NULL, &codec_info[i], &codec_param);
 
-	/* Add fmtp params */
-	if (codec_param.dec_fmtp.cnt > 0) {
-	    enum { MAX_FMTP_STR_LEN = 160 };
-	    char buf[MAX_FMTP_STR_LEN];
-	    unsigned buf_len = 0, j;
-	    pjmedia_codec_fmtp *dec_fmtp = &codec_param.dec_fmtp;
+		fmt = &m->desc.fmt[m->desc.fmt_count++];
+		fmt->ptr = (char*) pj_pool_alloc(pool, 8);
+		fmt->slen = pj_utoa(codec_info[i].pt, fmt->ptr);
+		rtpmap.pt = *fmt;
 
-	    /* Print codec PT */
-	    buf_len += pj_ansi_snprintf(buf, 
-					MAX_FMTP_STR_LEN - buf_len, 
-					"%d", 
-					codec_info[i].pt);
+		/* Encoding name */
+		rtpmap.enc_name = codec_info[i].encoding_name;
 
-	    for (j = 0; j < dec_fmtp->cnt; ++j) {
-		pj_size_t test_len = 2;
+		/* Clock rate */
+		rtpmap.clock_rate = codec_info[i].clock_rate;
 
-		/* Check if buf still available */
-		test_len = dec_fmtp->param[j].val.slen + 
-			   dec_fmtp->param[j].name.slen + 2;
-		if (test_len + buf_len >= MAX_FMTP_STR_LEN)
-		    return PJ_ETOOBIG;
+		if (codec_info[i].pt >= 96 || pjmedia_add_rtpmap_for_static_pt) 
+		{
+			pjmedia_sdp_rtpmap_to_attr(pool, &rtpmap, &attr);
+			m->attr[m->attr_count++] = attr;
+		}
 
-		/* Print delimiter */
-		buf_len += pj_ansi_snprintf(&buf[buf_len], 
-					    MAX_FMTP_STR_LEN - buf_len,
-					    (j == 0?" ":";"));
+		/* Add fmtp params */
+		if (codec_param.dec_fmtp.cnt > 0) 
+		{
+			enum { MAX_FMTP_STR_LEN = 160 };
+			char buf[MAX_FMTP_STR_LEN];
+			unsigned buf_len = 0, j;
+			pjmedia_codec_fmtp *dec_fmtp = &codec_param.dec_fmtp;
 
-		/* Print an fmtp param */
-		if (dec_fmtp->param[j].name.slen)
-		    buf_len += pj_ansi_snprintf(
-					    &buf[buf_len],
-					    MAX_FMTP_STR_LEN - buf_len,
-					    "%.*s=%.*s",
-					    (int)dec_fmtp->param[j].name.slen,
-					    dec_fmtp->param[j].name.ptr,
-					    (int)dec_fmtp->param[j].val.slen,
-					    dec_fmtp->param[j].val.ptr);
-		else
-		    buf_len += pj_ansi_snprintf(&buf[buf_len], 
-					    MAX_FMTP_STR_LEN - buf_len,
-					    "%.*s", 
-					    (int)dec_fmtp->param[j].val.slen,
-					    dec_fmtp->param[j].val.ptr);
-	    }
+			/* Print codec PT */
+			buf_len += pj_ansi_snprintf(buf, MAX_FMTP_STR_LEN - buf_len, "%d", codec_info[i].pt);
 
-	    attr = PJ_POOL_ZALLOC_T(pool, pjmedia_sdp_attr);
+			for (j = 0; j < dec_fmtp->cnt; ++j) {
+			pj_size_t test_len = 2;
 
-	    attr->name = pj_str("fmtp");
-	    attr->value = pj_strdup3(pool, buf);
-	    m->attr[m->attr_count++] = attr;
-	}
+			/* Check if buf still available */
+			test_len = dec_fmtp->param[j].val.slen + 
+				   dec_fmtp->param[j].name.slen + 2;
+			if (test_len + buf_len >= MAX_FMTP_STR_LEN)
+				return PJ_ETOOBIG;
+
+			/* Print delimiter */
+			buf_len += pj_ansi_snprintf(&buf[buf_len], 
+							MAX_FMTP_STR_LEN - buf_len,
+							(j == 0?" ":";"));
+
+			/* Print an fmtp param */
+			if (dec_fmtp->param[j].name.slen)
+				buf_len += pj_ansi_snprintf(
+							&buf[buf_len],
+							MAX_FMTP_STR_LEN - buf_len,
+							"%.*s=%.*s",
+							(int)dec_fmtp->param[j].name.slen,
+							dec_fmtp->param[j].name.ptr,
+							(int)dec_fmtp->param[j].val.slen,
+							dec_fmtp->param[j].val.ptr);
+			else
+				buf_len += pj_ansi_snprintf(&buf[buf_len], 
+							MAX_FMTP_STR_LEN - buf_len,
+							"%.*s", 
+							(int)dec_fmtp->param[j].val.slen,
+							dec_fmtp->param[j].val.ptr);
+			}
+
+			attr = PJ_POOL_ZALLOC_T(pool, pjmedia_sdp_attr);
+
+			attr->name = pj_str("fmtp");
+			attr->value = pj_strdup3(pool, buf);
+			m->attr[m->attr_count++] = attr;
+		}
     
-	/* Find maximum bitrate in this media */
-	vfd = pjmedia_format_get_video_format_detail(&codec_param.enc_fmt,
-						     PJ_TRUE);
-	if (vfd && max_bitrate < vfd->max_bps)
-	    max_bitrate = vfd->max_bps;
+		/* Find maximum bitrate in this media */
+		vfd = pjmedia_format_get_video_format_detail(&codec_param.enc_fmt,
+								 PJ_TRUE);
+		if (vfd && max_bitrate < vfd->max_bps)
+			max_bitrate = vfd->max_bps;
     }
 
     /* Put bandwidth info in media level using bandwidth modifier "TIAS"

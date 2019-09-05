@@ -1205,9 +1205,10 @@ static void on_rx_rtp(void *user_data, void *pkt, pj_ssize_t size)
     status = pjmedia_rtp_decode_rtp(&strm->in_sess, 
 				    pkt, (int)size, 
 				    &hdr, &payload, &payload_len);
-    if (status != PJ_SUCCESS) {
-	app_perror(THIS_FILE, "RTP decode error", status);
-	return;
+    if (status != PJ_SUCCESS) 
+	{
+		app_perror(THIS_FILE, "RTP decode error", status);
+		return;
     }
 
     //PJ_LOG(4,(THIS_FILE, "Rx seq=%d", pj_ntohs(hdr->seq)));

@@ -2582,20 +2582,19 @@ pj_status_t pjsua_media_channel_create_sdp(pjsua_call_id call_id,
 	pjmedia_transport_get_info(call_med->tp, &tpinfo);
 
 	/* Ask pjmedia endpoint to create SDP media line */
-	switch (call_med->type) {
-	case PJMEDIA_TYPE_AUDIO:
-	    status = pjmedia_endpt_create_audio_sdp(pjsua_var.med_endpt, pool,
-                                                    &tpinfo.sock_info, 0, &m);
-	    break;
-#if defined(PJMEDIA_HAS_VIDEO) && (PJMEDIA_HAS_VIDEO != 0)
-	case PJMEDIA_TYPE_VIDEO:
-	    status = pjmedia_endpt_create_video_sdp(pjsua_var.med_endpt, pool,
-	                                            &tpinfo.sock_info, 0, &m);
-	    break;
-#endif
-	default:
-	    pj_assert(!"Invalid call_med media type");
-	    status = PJ_EBUG;
+	switch (call_med->type)
+	{
+		case PJMEDIA_TYPE_AUDIO:
+			status = pjmedia_endpt_create_audio_sdp(pjsua_var.med_endpt, pool, &tpinfo.sock_info, 0, &m);
+			break;
+	#if defined(PJMEDIA_HAS_VIDEO) && (PJMEDIA_HAS_VIDEO != 0)
+		case PJMEDIA_TYPE_VIDEO:
+			status = pjmedia_endpt_create_video_sdp(pjsua_var.med_endpt, pool, &tpinfo.sock_info, 0, &m);
+			break;
+	#endif
+		default:
+			pj_assert(!"Invalid call_med media type");
+			status = PJ_EBUG;
 	}
 
 	if (status != PJ_SUCCESS)

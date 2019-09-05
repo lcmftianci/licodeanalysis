@@ -258,8 +258,7 @@ int main(int argc, char *argv[])
 
 	/* Create the endpoint: */
 
-	status = pjsip_endpt_create(&cp.factory, endpt_name, 
-				    &g_endpt);
+	status = pjsip_endpt_create(&cp.factory, endpt_name, &g_endpt);
 	PJ_ASSERT_RETURN(status == PJ_SUCCESS, 1);
     }
 

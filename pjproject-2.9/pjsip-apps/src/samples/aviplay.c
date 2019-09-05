@@ -55,7 +55,7 @@
 
 
 #if defined(PJMEDIA_HAS_VIDEO) && (PJMEDIA_HAS_VIDEO != 0)
-
+#pragma comment(lib, "avcodec.lib")
 
 /* For logging purpose. */
 #define THIS_FILE   "aviplay.c"

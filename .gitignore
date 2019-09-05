@@ -37,6 +37,15 @@ ThirdParty/log4cxx/lib/log4cxx.lib
 SFU.VC.db
 SFU.VC.VC.opendb
 
+*.lib
+*.dll
+*.log
+*.user
+*.tlog
+*.htm
+*.zip
+*.tar.xz
+
 .vs/
 IntDir/
 Lib/

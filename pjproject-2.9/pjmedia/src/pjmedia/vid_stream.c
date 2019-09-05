@@ -667,12 +667,12 @@ static void on_rx_rtp( pjmedia_tp_cb_param *param)
 	return;
 
     /* Update RTP and RTCP session. */
-    status = pjmedia_rtp_decode_rtp(&channel->rtp, pkt, (int)bytes_read,
-				    &hdr, &payload, &payloadlen);
-    if (status != PJ_SUCCESS) {
-	LOGERR_((channel->port.info.name.ptr, status, "RTP decode error"));
-	stream->rtcp.stat.rx.discard++;
-	return;
+    status = pjmedia_rtp_decode_rtp(&channel->rtp, pkt, (int)bytes_read, &hdr, &payload, &payloadlen);
+    if (status != PJ_SUCCESS)
+	{
+		LOGERR_((channel->port.info.name.ptr, status, "RTP decode error"));
+		stream->rtcp.stat.rx.discard++;
+		return;
     }
 
     /* Check if multiplexing is allowed and the payload indicates RTCP. */

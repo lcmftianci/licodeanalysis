@@ -856,10 +856,7 @@ PJ_DEF(const char *) pjsip_inv_state_name(pjsip_inv_state state)
 /*
  * Create UAC invite session.
  */
-PJ_DEF(pj_status_t) pjsip_inv_create_uac( pjsip_dialog *dlg,
-					  const pjmedia_sdp_session *local_sdp,
-					  unsigned options,
-					  pjsip_inv_session **p_inv)
+PJ_DEF(pj_status_t) pjsip_inv_create_uac( pjsip_dialog *dlg, const pjmedia_sdp_session *local_sdp, unsigned options, pjsip_inv_session **p_inv)
 {
     pjsip_inv_session *inv;
     pj_status_t status;
@@ -881,9 +878,10 @@ PJ_DEF(pj_status_t) pjsip_inv_create_uac( pjsip_dialog *dlg,
     pj_assert(inv != NULL);
 
     status = pj_atomic_create(dlg->pool, 0, &inv->ref_cnt);
-    if (status != PJ_SUCCESS) {
-	pjsip_dlg_dec_lock(dlg);
-	return status;
+    if (status != PJ_SUCCESS) 
+	{
+		pjsip_dlg_dec_lock(dlg);
+		return status;
     }
 
     inv->pool = dlg->pool;
@@ -897,22 +895,21 @@ PJ_DEF(pj_status_t) pjsip_inv_create_uac( pjsip_dialog *dlg,
     /* Create flip-flop pool (see ticket #877) */
     /* (using inv->obj_name as temporary variable for pool names */
     pj_ansi_snprintf(inv->obj_name, PJ_MAX_OBJ_NAME, "inv%p", dlg->pool);
-    inv->pool_prov = pjsip_endpt_create_pool(dlg->endpt, inv->obj_name,
-					     POOL_INIT_SIZE, POOL_INC_SIZE);
-    inv->pool_active = pjsip_endpt_create_pool(dlg->endpt, inv->obj_name,
-					       POOL_INIT_SIZE, POOL_INC_SIZE);
+    inv->pool_prov = pjsip_endpt_create_pool(dlg->endpt, inv->obj_name, POOL_INIT_SIZE, POOL_INC_SIZE);
+	inv->pool_active = pjsip_endpt_create_pool(dlg->endpt, inv->obj_name, POOL_INIT_SIZE, POOL_INC_SIZE);
 
     /* Object name will use the same dialog pointer. */
     pj_ansi_snprintf(inv->obj_name, PJ_MAX_OBJ_NAME, "inv%p", dlg);
 
     /* Create negotiator if local_sdp is specified. */
-    if (local_sdp) {
-	status = pjmedia_sdp_neg_create_w_local_offer(inv->pool, 
-						      local_sdp, &inv->neg);
-	if (status != PJ_SUCCESS) {
-	    pjsip_dlg_dec_lock(dlg);
-	    return status;
-	}
+    if (local_sdp) 
+	{
+		status = pjmedia_sdp_neg_create_w_local_offer(inv->pool, local_sdp, &inv->neg);
+		if (status != PJ_SUCCESS) 
+		{
+			pjsip_dlg_dec_lock(dlg);
+			return status;
+		}
     }
 
     /* Register invite as dialog usage. */
