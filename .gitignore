@@ -45,6 +45,10 @@ SFU.VC.VC.opendb
 *.htm
 *.zip
 *.tar.xz
+*.tar.gz
+*.obj
+*.o
+*.d
 
 .vs/
 IntDir/

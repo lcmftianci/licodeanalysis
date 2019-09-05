@@ -1,3 +1,0 @@
-[submodule "contrib/libudfread"]
-	path = contrib/libudfread
-	url = git://git.videolan.org/libudfread.git
